@@ -31,7 +31,7 @@ There are 6 playable races in Galactic Conquest. Race choice determines your bas
 - **Viable income:** Agriculture, Commercial
 - **Cannot explore** — all land must be acquired through combat against NPCs or other players
 - Standard clustering (C1/C2/C3)
-- Can die if all planets are lost (only Terran and Aspha Miner are immune to this)
+- Can die if all planets are lost
 - D-class ships cannot be reverse engineered by Viral
 
 ## Viral
