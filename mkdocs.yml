@@ -1,0 +1,49 @@
+site_name: Galactic Conquest Wiki
+site_description: Community wiki for the web-based text MMO Galactic Conquest
+repo_url: https://github.com/DrLatBC/gc-wiki
+repo_name: DrLatBC/gc-wiki
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.action.edit
+    - content.code.copy
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+nav:
+  - Home: index.md
+  - Turns: turns.md
+  - Resources: resources.md
+  - Income Types: income-types.md
+  - Colonies & Clustering: colonies.md
+  - Races: races.md
+  - Artifacts & Digging: artifacts.md
+  - Ships: ships.md
+  - Battle Mechanics: battle-mechanics.md
+  - Federations: federations.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
