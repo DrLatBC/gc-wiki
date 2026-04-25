@@ -34,7 +34,7 @@ When you find a specific artifact type within a dig session, that artifact type 
 | 20:30–21:00 | **Uncommon** |
 | 21:00–22:00 | Common |
 
-> Artifacts can still be found outside these windows but in much lower quantities. Regalos used during Rare or Uncommon dig times yield better results.
+> Artifacts can still be found outside these windows but in much lower quantities.
 
 ## Artifact Rarity Tiers
 
@@ -80,7 +80,7 @@ Higher tier artifacts are either fused from lower tier components or obtained as
 | Persiana | +10 Timewarp | Minor Requerido, Small Time Capsule, Minor Gente, Small Time Capsule, Minor Alimento |
 | Regalo | +1 to 10 of a Random Artifact | Minor Gordo, Garnet Dinero, Traicione, Minor Alimento, Minor Cosecha |
 
-> Regalos have a 20% chance to fizzle. This can be reduced with Luck artifacts or during Rare dig time.
+> Regalos have a 20% chance to fizzle. This can be reduced with Luck artifacts.
 
 ### Rare
 
