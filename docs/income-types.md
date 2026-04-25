@@ -14,7 +14,6 @@ Tax income converts population into credits. Population is fed by Food (required
 
 - Loyalty maxes at 5,000 and is trivial to raise for most races (costs a small number of turns)
 - Guardians **cannot raise loyalty** — an intentional nerf since Tax is their only viable income path
-- High base PR is the main drawback — Tax players are large targets
 
 ## Commercial
 
