@@ -85,9 +85,9 @@ Govern return fire eligibility (see [Battle Mechanics](battle-mechanics.md)):
 
 When a ship with a cap chance destroys enemy ships, it salvages this percentage of the kills and adds them to its own fleet immediately. For example, a 75% cap chance on 100 kills recovers 75 ships. Salvaged ships are available for use in subsequent attacks.
 
-**Viral (V-class):** Captured ships are reverse engineered and kept permanently as part of the Viral fleet, allowing Viral to snowball across chained engagements.
+**Viral (V-class):** Captured ships are reverse engineered and kept permanently as part of the Viral fleet, allowing virals to choose their own shiplist. 
 
-**Collective:** Captured ships can be used or disbanded. Collective does not reverse engineer — they take and use enemy ships directly.
+**Collective:** Captured ships can be used or disbanded. Collective does not reverse engineer — they take and use enemy ships directly. 
 
 ### Build Rate & PR Built Per Turn
 
