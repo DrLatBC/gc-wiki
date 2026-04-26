@@ -19,7 +19,7 @@ Each race has a unique shiplist of ~15 race-specific ships plus access to ~20 ne
 | Collective | C. |
 | Neutral | F., Strafez, Light, C. Class |
 
-Viral can reverse engineer 3 ships from the Terran, Marauder, and Aspha Miner lists (excluding P., D., and G. class ships). This selection can be changed approximately weekly.
+Viral can reverse engineer 3 ships from the Terran, Marauder, and Aspha Miner lists (excluding P., D., and G. class ships). This selection can be changed every month. This allows for supreme flexability and tailoring your ship list against your opponent specifically. Need to fight a lot of guards? Load up on missile boats, pesky marus bothering you? Grab gar/epi and go nuts. 
 
 ### Ultimate Weapon (UW) Ships
 
