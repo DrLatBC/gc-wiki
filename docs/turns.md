@@ -4,7 +4,7 @@ Turns are the primary resource used to perform actions in Galactic Conquest. The
 
 ## Regeneration
 
-- **Rate:** 1 turn every 2.5 seconds (~1,440 turns/hour)
+- **Rate:** 1 turn every 5 seconds (720 turns/hour)
 - **Cap:** 90 turns
 
 At this regeneration rate, a player goes from zero to cap in under 4 minutes. Hitting the cap is a real loss — unspent turns are wasted turns. GC is designed as a second-monitor or check-in-frequently game; the expected playstyle is spending turns regularly throughout the day rather than in large sessions.
