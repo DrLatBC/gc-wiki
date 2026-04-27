@@ -14,7 +14,7 @@ When you find a specific artifact type within a dig session, that artifact type 
 
 | Factor | Effect |
 |--------|--------|
-| **Planet Type** | U.Spazial is best for most artifact types. Ocean is best during Uncommon dig time and acceptable otherwise. Gas is the worst option. |
+| **Planet Type** | U.Spazial is best for most artifact types. Ocean is best during Uncommon dig time and acceptable otherwise. Gas is the distant 3rd best, but will do in a pinch. |
 | **Race** | Some races have positive or negative dig modifiers. |
 | **Turns Used** | Chunk size affects results — 7 turns is the meta. |
 | **Time of Day** | The biggest factor. See dig times below. |
