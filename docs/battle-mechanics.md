@@ -161,6 +161,11 @@ Players below **5,000 PR** cannot be attacked. Crossing 5,000 PR removes NP perm
 ### Normal
 Standard attack. -5% attacker efficiency, defender at 100%.
 
+## PR formula
+
+((Planet Infra * (5+(land/250000))) + (Planet Count * 1000)) + fleet power
+
+
 ### Careful
 Both sides at -50% efficiency. Favors high hull ships that are hard to kill. Rarely wins more than 1-2 colonies. Avoid using with high range or high attack ships.
 
