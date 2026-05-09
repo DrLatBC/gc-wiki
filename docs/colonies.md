@@ -111,6 +111,30 @@ List order cannot be manually rearranged — it must be managed indirectly throu
 
 A maximum of **4 colonies** can be lost in a single Damage Protection period (typically as a 1+3 or 2+2 split across multiple attacks). Losing 3 in one period is the practical norm; 4 is possible but rare.
 
+## Population
+
+Population is the workforce of a colony — it produces tax credits, consumes food and goods, and is capped by Housing buildings and Housing research.
+
+**Maximum population:**
+`Max Pop = (10 + Housing Research) × Housing`
+
+Each level of Housing Research adds 1 to the population multiplier per Housing building. Collective doubles this cap (`Max Pop × 2`).
+
+**Growth** requires `food ≥ floor(population / 10) × turns` (Guardian colonies are exempt — they don't consume food and cannot starve). When fed and below cap:
+
+```
+new_population = population + floor(
+    (floor(population × (2 × planet_pop_mod / 100) / 100) + 1) × turns
+)
+```
+
+**Starvation** triggers when food runs short for non-Guardian colonies:
+
+- 15% population loss (`floor(population × 0.85)`)
+- 10 loyalty loss (down to a minimum of 0)
+
+See the [Formulas](formulas.md) page for the canonical versions of all population calculations.
+
 ## Plundering
 
 Plundering is the only way to destroy a colony. It converts the colony's value into a one-time credit payout and removes it from your empire. Players use plunder to:

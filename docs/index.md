@@ -17,9 +17,10 @@ Galactic Conquest is a slow-paced, spreadsheet-style 4X-adjacent MMO. Mastery is
 
 ### Core Systems
 - [Turns](turns.md) — How turns work, regeneration, and the turn budget
-- [Resources](resources.md) — All resources and the market
+- [Resources](resources.md) — All resources, the market, and resource caps
 - [Income Types](income-types.md) — Tax, Commercial, Agriculture, Industry, Mining
-- [Colonies & Clustering](colonies.md) — Planets, clusters, exploring, and defensive list management
+- [Colonies & Clustering](colonies.md) — Planets, clusters, exploring, population, and defensive list management
+- [Formulas](formulas.md) — Canonical production, population, and economy formulas
 - [Artifacts & Digging](artifacts.md) — Digging mechanics, artifact tiers, recipes, and effects
 
 ### Combat
@@ -35,7 +36,7 @@ Galactic Conquest is a slow-paced, spreadsheet-style 4X-adjacent MMO. Mastery is
 The following topics are documented elsewhere or pending further research:
 
 - **Missions** — NPC mission system. Refer to community guides for current information.
-- **Formulas** — Full income and combat formulas are available in [Exule's Game Guide](https://gcc.wrindustries.com/hef.cfm?&5639&f=hef_detail&hi=6223&ch=101) on the GC forums. Note: guide is from 2008, updated periodically — verify against current game behavior.
+- **Combat formulas** — Production and economy formulas are documented in [Formulas](formulas.md). Combat formulas are not yet covered here; [Exule's Game Guide](https://gcc.wrindustries.com/hef.cfm?&5639&f=hef_detail&hi=6223&ch=101) (2008, periodically updated) is the legacy reference — verify against current game behavior.
 - **Ship stats** — Full live ship stats: [Vigi's GC Shiplist](https://docs.google.com/spreadsheets/d/13_0zDPWB9EX1YwlMKWCjfOeG9KYjIC8uHS6Z1B8kVAg/edit?gid=1753353631#gid=1753353631)
 - **Combat depth** — Ship matchups, fleet composition meta, and stacking strategy are not covered here. This is a deep topic best learned through play and community discussion.
 - **Slave mechanic** — Disabled, pending rework. Not documented.

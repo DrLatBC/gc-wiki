@@ -42,4 +42,24 @@ Tax players ←—————————————————————�
 Population growth → Tax income
 ```
 
-Mining produces ship minerals sold directly on the market. Commercial infrastructure produces CGs and credits directly without relying on Raw Material in any significant quantity.
+Mining produces ship minerals sold directly on the market. Commercial infrastructure produces CGs (consuming 2 Raw Materials per building per turn) and a flat empire-wide credit stream that has no resource cost.
+
+## Resource Caps
+
+Hard ceilings on stored resources. Production beyond these caps is discarded.
+
+| Resource | Cap |
+|----------|-----|
+| Credits (positive) | 5,000,000,000,000 (5 trillion) |
+| Credits (debt floor) | -200,999,999,999 |
+| Raw Materials | 25,000,000,000 (25 billion) |
+| Food | 25,000,000,000 (25 billion) |
+| Goods | 25,000,000,000 (25 billion) |
+| Ore | 2,000,000,000 (2 billion) |
+| Each ship mineral (1–6) | 2,000,000,000 (2 billion) |
+
+Going into negative credits triggers compounding 1.5%-per-turn debt interest — see [Formulas](formulas.md#debt-interest).
+
+## Goods → Credits Auto-Conversion
+
+After population consumes its share, surplus goods on each colony are auto-sold at **5.5 credits per good** (per colony, summed across your empire). This is the primary mechanism by which produced goods become income — see the full per-colony order in [Formulas](formulas.md#calculation-order).
