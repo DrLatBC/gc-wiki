@@ -2,6 +2,45 @@
 
 There are 6 playable races in Galactic Conquest. Race choice determines your base income modifiers, shiplist, clustering mechanic, colony cap, and several unique mechanical rules. It is the most impactful decision a new player makes.
 
+> Three additional non-playable races exist in the game data — KalZul, Berserkers, and Dark Marauders. These are NPC-only and cannot be selected.
+
+## Race Modifiers
+
+All economic modifiers are stored as percentages added to a 1.0× baseline. Convert to a multiplier with `1 + (value / 100)` — e.g. +220% = 3.2× and −95% = 0.05×. These modifiers feed directly into the formulas on the [Formulas](formulas.md) page.
+
+| Race | Tax (Pop) | Agri | Commercial | Industry | Goods Demand | Maintenance | Plunder | Minerals |
+|---|---|---|---|---|---|---|---|---|
+| Terran | +0% | +20% | +20% | +220% | +350% | +0% | −50% | +0% |
+| Aspha Miner | +220% | −50% | −95% | +350% | +0% | −20% | −95% | +2,900% |
+| Guardian | −85% | −95% | −99% | −99% | −90% | −25% | −99% | −99% |
+| Marauder | −95% | −50% | −95% | −50% | +0% | −95% | +1,900% | −95% |
+| Viral | +20% | −20% | −5% | −50% | +100% | +0% | −99% | +0% |
+| Collective | −50% | +50% | −95% | −90% | −95% | +0% | +1,100% | −50% |
+
+| Column | Formula variable | Affects |
+|---|---|---|
+| Tax (Pop) | `race_tax_mod` | Per-population credit yield |
+| Agri | `race_agriculture_mod` | Food + Raw Materials output |
+| Commercial | `race_commercial_mod` | Empire commercial credits, Commercial CG output |
+| Industry | `race_industry_mod` | Industry CG output |
+| Goods Demand | `race_good_mod` | Population goods consumption (more consumed → more 5.5/good auto-conversion income) |
+| Maintenance | `race_maintenance_mod` | Empire infrastructure upkeep cost |
+| Plunder | — | Bonus credits when plundering colonies (no income-cycle effect) |
+| Minerals | `race_mineral_mod` | Minerals from mining |
+
+> **Goods Demand quirk:** Counter-intuitively, *higher* goods demand is *better* for income. Population consumes goods, surplus is auto-sold at 5.5 credits/good — so Terran's +350% is the engine behind their tax-with-CGs power, not a penalty.
+
+## Difficulty & Colony Caps
+
+| Race | Difficulty | Max Colonies | Exploration | Missions |
+|---|---|---|---|---|
+| Terran | Easy | 15 | Yes | Yes |
+| Aspha Miner | Easy | 12 | Yes | Yes |
+| Guardian | Hard | 10 | Yes | Yes |
+| Marauder | Medium | 12 | No | No |
+| Viral | Hard | 12 | Yes | No |
+| Collective | Hard | 13 | No | No |
+
 ## Terran
 
 - **Viable income:** Agriculture, Commercial, Industry

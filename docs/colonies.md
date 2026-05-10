@@ -23,7 +23,7 @@ Most planet types are irrelevant to income and clustering. The exceptions:
 | Type | Notes |
 |------|-------|
 | **Barren** | Highest possible land mass. Most likely to push 1,000+ land. Primary clustering target. |
-| **Balance** | Can reach 850–900 with a good roll. Acceptable clustering candidate. |
+| **Balanced** | Can reach 850–900 with a good roll. Acceptable clustering candidate. |
 | **U.Spazial** | Best planet for artifact digging. Seek out 2-land copies specifically. |
 | **U.Large** | 5,000–10,000+ land. Excellent for infrastructure but cannot be clustered. |
 | **U.Fertile** | Very high food/agriculture output. Cannot be clustered. |
@@ -31,6 +31,8 @@ Most planet types are irrelevant to income and clustering. The exceptions:
 | **U.Rich** | High ore content but very low land. Generally not worth keeping. |
 
 U-class planets cannot be clustered but are kept for their unique bonuses. Viral and Collective cannot use U-class planets for income (infection/assimilation is required) but can use U.Spazial for digging since digging does not require infection.
+
+> Full numeric reference for all 30+ planet types — including population growth, agriculture, and mining modifiers, plus cluster-type modifiers — lives on the [Planet Types](planets.md) page.
 
 ## Exploring
 
