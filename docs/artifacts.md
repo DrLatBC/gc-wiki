@@ -20,19 +20,59 @@ When you find a specific artifact type within a dig session, that artifact type 
 | **Time of Day** | The biggest factor. See dig times below. |
 | **Luck** | Increases artifact find rates. See Luck artifacts. |
 
-### Dig Times (Server Time — Malaysian Clock)
+### Dig Times (Server Time — Eastern Time)
 
-| Window | Type |
-|--------|------|
-| 14:00–16:30 | Common |
-| 16:30–17:00 | Mix |
-| 17:00–18:30 | Common |
-| 18:30–19:00 | **Rare** |
-| 19:00–20:30 | Common |
-| 20:30–21:00 | **Uncommon** |
-| 21:00–22:00 | Common |
+The dig schedule runs as **four groups per day**, each a 4-hour window, on a 6-hour cadence:
 
-> Artifacts can still be found outside these windows but in much lower quantities.
+| Group | Window (ET) |
+|---|---|
+| Group 1 | 00:00 – 04:00 |
+| Group 2 | 06:00 – 10:00 |
+| Group 3 | 12:00 – 16:00 |
+| Group 4 | 18:00 – 22:00 |
+
+Outside these four windows, **Default Dig** is active (low yields).
+
+Each group is structured as **two waves** separated by an internal Default Dig gap. The pattern below is identical for all four groups — times are offsets from the group's start hour:
+
+| Offset | Type | Duration |
+|---|---|---|
+| **Wave 1** | | |
+| :00 – :30 | Common | 30 min |
+| :31 – :45 | **Rare** | 15 min |
+| :46 – +1:30 | Common | 45 min |
+| +1:31 – +1:35 | **Mixed** | 5 min |
+| +1:36 – +2:29 | *Default Dig* | ~55 min |
+| **Wave 2** | | |
+| +2:30 – +2:45 | Common | 15 min |
+| +2:46 – +2:50 | **Mixed** | 5 min |
+| +2:51 – +3:00 | Common | 10 min |
+| +3:01 – +3:20 | **UnCommon** | 20 min |
+| +3:21 – +4:00 | Common | 40 min |
+
+So a full Group 4 (18:00–22:00 ET) plays out as:
+
+| Time (ET) | Type |
+|---|---|
+| 18:00 – 18:30 | Common |
+| 18:31 – 18:45 | **Rare** |
+| 18:46 – 19:30 | Common |
+| 19:31 – 19:35 | **Mixed** |
+| 19:36 – 20:29 | Default Dig |
+| 20:30 – 20:45 | Common |
+| 20:46 – 20:50 | **Mixed** |
+| 20:51 – 21:00 | Common |
+| 21:01 – 21:20 | **UnCommon** |
+| 21:21 – 22:00 | Common |
+
+**Rare types per group:**
+
+- **Rare:** 15 minutes (Wave 1)
+- **UnCommon:** 20 minutes (Wave 2)
+- **Mixed:** two 5-minute windows (one per wave)
+- Across the day that's 1 hour of Rare, 1h 20m of UnCommon, and 40 minutes of Mixed total
+
+> The current dig type is shown live on every page in-game — there's a dig schedule link in the side panel and at `com_dig_times`. Use it to confirm timing rather than relying on the wiki for exact times if a window is shifted in a patch.
 
 ## Artifact Rarity Tiers
 
