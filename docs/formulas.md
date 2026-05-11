@@ -235,6 +235,30 @@ max_population = (10 + housing_research) × housing
 
 ---
 
+## Staffing — Pop Required to Fill Land
+
+**Every building on a colony consumes 1 population to operate** — housing buildings included. Housing buildings *provide* `(10 + housing_research)` population each, so they're net-positive (one pop occupies the housing itself, the rest is free for staffing other buildings). Non-housing buildings consume 1 pop with no provision.
+
+Concretely: if you have 2,000 total land (200 housing + 1,800 income buildings) at housing research 0, your max pop is `200 × 10 = 2,000`, which exactly matches the 2,000-building total. Fully staffed. If housing isn't sufficient for the total:
+
+```
+staffing_ratio = min(1.0, max_population / total_buildings)
+```
+
+and every non-housing building's output is multiplied by `staffing_ratio`. Tax credits, goods consumption, food demand, and food bonuses all still scale with `max_population` (the pop you have, whether they're "working" or not).
+
+**Solving for the minimum housing needed** to fully staff a colony of `total_buildings` infrastructure at research level `Hr`:
+
+```
+housing_min = ceil(total_buildings / (10 + Hr))
+```
+
+This is the source of the "7 housing meta" you'll see referenced — at full housing research investment (Hr ≈ 250+), each housing supports ~260 pop, so even a 2,000-land colony only needs ~8 housing for staffing. The other ~1,992 land slots go to your income building of choice.
+
+For Collective, `pop_per_housing` is doubled (Collective's racial 2× cap), so `housing_min = ceil(total / ((10 + Hr) × 2))`.
+
+---
+
 ## Population Growth (Normal Races)
 
 Requires sufficient food to feed the colony. Each colony consumes:

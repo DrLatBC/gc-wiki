@@ -122,6 +122,14 @@ Population is the workforce of a colony — it produces tax credits, consumes fo
 
 Each level of Housing Research adds 1 to the population multiplier per Housing building. Collective doubles this cap (`Max Pop × 2`).
 
+**Staffing — every building needs population to operate.** Each unit of infrastructure (housing or otherwise) consumes 1 pop. Housing *provides* `(10 + Housing Research)` pop each — so the net free pop available to staff non-housing buildings is `(9 + Hr)` per housing at low research, growing with research investment. The minimum housing needed to fully staff a colony of `N` total infrastructure is:
+
+```
+housing_min = ceil(N / (10 + Hr))
+```
+
+If you build more non-housing than your housing can support, **non-housing output scales down** by `max_pop / total_buildings`. This is why the income-meta sets housing research at a low integer like 5–10 then dumps everything else into the chosen income research — at e.g. Hr=7, each housing supports 17 pop, so a 255-land colony only needs ~15 housing for full staffing. The rest (~240 land) goes into your income building. See [Formulas](formulas.md#staffing-pop-required-to-fill-land) for the full math.
+
 **Growth** requires `food ≥ floor(population / 10) × turns` (Guardian colonies are exempt — they don't consume food and cannot starve). When fed and below cap:
 
 ```
