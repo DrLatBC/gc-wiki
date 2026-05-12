@@ -170,3 +170,7 @@ Both sides at -50% efficiency. Favors high hull ships that are hard to kill. Rar
 ## PR formula
 
 ((Planet Infra * (5+(land/250000))) + (Planet Count * 1000)) + fleet power
+
+## Further reading
+
+- [Exule's Game Guide](https://gcc.wrindustries.com/hef.cfm?&5639&f=hef_detail&hi=6223&ch=101) — 2008 legacy combat reference, periodically updated. Predates several engine changes, so verify against current game behavior before relying on specific numbers.

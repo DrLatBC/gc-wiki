@@ -13,6 +13,20 @@ Only **three races** have a mission track. The remaining races can be played nor
 | Viral | No | — |
 | Collective | No | — |
 
+## Recommended strategy
+
+**Max your loyalty up to the 5,000 soft cap first, then use missions to push past it.**
+
+Loyalty is normally hard-capped on the way up by diminishing returns at the 5,000 soft cap — natural loyalty-building (governors, infrastructure, time) hits a wall there. Mission rewards, however, are **flat additions** applied directly via SQL: the script just runs `loyalty = loyalty + N` with no cap check. That means a +250-loyalty mission landing on a colony already sitting at 5,000 pushes it to 5,250 — territory you can't reach by any other means.
+
+The Act 2 tracks alone hand out **+50, +100, +150, +250** stackable loyalty grants. If you trigger those while every colony is parked at 5,000, you walk away with empire-wide loyalty well above the cap and the income gains that come with it.
+
+Practical playthrough order:
+
+1. **Grind every colony up to the 5,000 soft cap first** — through governors, infrastructure, and time — before triggering any high-loyalty mission completion.
+2. **Save the big loyalty missions for last.** The +100, +150, +250 grants in Act 2 are worth the most when they land on already-maxed colonies. Triggering them with low underlying loyalty wastes the headroom.
+3. Time the credit-burning "building" missions (see costs below) for when your reserves are well above the threshold — completing them with exactly the threshold leaves your treasury at zero.
+
 ## Structure
 
 Every race's track follows the same two-act format:
