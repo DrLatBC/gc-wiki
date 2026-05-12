@@ -34,9 +34,9 @@ All economic modifiers are stored as percentages added to a 1.0× baseline. Conv
 
 | Race | Difficulty | Max Colonies | Exploration | Missions |
 |---|---|---|---|---|
-| Terran | Easy | 15 | Yes | Yes |
-| Aspha Miner | Easy | 12 | Yes | Yes |
-| Guardian | Hard | 10 | Yes | Yes |
+| Terran | Easy | 15 | Yes | [Yes](missions/terran.md) |
+| Aspha Miner | Easy | 12 | Yes | [Yes](missions/aspha-miner.md) |
+| Guardian | Hard | 10 | Yes | [Yes](missions/guardian.md) |
 | Marauder | Medium | 12 | No | No |
 | Viral | Hard | 12 | Yes | No |
 | Collective | Hard | 13 | No | No |

@@ -37,6 +37,11 @@ nav:
   - Planet Types: planets.md
   - Formulas: formulas.md
   - Races: races.md
+  - Missions:
+    - Overview: missions/index.md
+    - Terran: missions/terran.md
+    - Aspha Miner: missions/aspha-miner.md
+    - Guardian: missions/guardian.md
   - Artifacts & Digging: artifacts.md
   - Ships: ships.md
   - Battle Mechanics: battle-mechanics.md

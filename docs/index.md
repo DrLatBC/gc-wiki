@@ -30,13 +30,13 @@ Galactic Conquest is a slow-paced, spreadsheet-style 4X-adjacent MMO. Mastery is
 
 ### Meta
 - [Races](races.md) — All 6 races, their mechanics, and viable income paths
+- [Missions](missions/index.md) — NPC mission tracks for Terran, Aspha Miner, and Guardian
 - [Federations](federations.md) — Guilds and federation war mechanics
 
 ## Known Gaps
 
 The following topics are documented elsewhere or pending further research:
 
-- **Missions** — NPC mission system. Refer to community guides for current information.
 - **Combat formulas** — Production and economy formulas are documented in [Formulas](formulas.md). Combat formulas are not yet covered here; [Exule's Game Guide](https://gcc.wrindustries.com/hef.cfm?&5639&f=hef_detail&hi=6223&ch=101) (2008, periodically updated) is the legacy reference — verify against current game behavior.
 - **Ship stats** — Full live ship stats: [Vigi's GC Shiplist](https://docs.google.com/spreadsheets/d/13_0zDPWB9EX1YwlMKWCjfOeG9KYjIC8uHS6Z1B8kVAg/edit?gid=1753353631#gid=1753353631)
 - **Combat depth** — Ship matchups, fleet composition meta, and stacking strategy are not covered here. This is a deep topic best learned through play and community discussion.
