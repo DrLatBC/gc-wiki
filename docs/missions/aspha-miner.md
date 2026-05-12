@@ -34,7 +34,7 @@ See the [Missions overview](index.md) for general mechanics. See [Aspha Miner on
 | 6 | Expansion of the Empire | Control 80 planets | 2 new colonies |
 | 7 | Stronghold | More than 800,000 PR | 3 new colonies |
 | 8 | Top of the Galaxy | Control 200 planets | +250 loyalty |
-| 9 | Final Mission | Control N planets (variable target) | **Infrastructure research cost cut to 1/10**. Temporary — discount fades after roughly the next ~5 research levels |
+| 9 | Final Mission | Control 300 planets | **Infrastructure research cost cut to 1/10**. Temporary — discount fades after roughly the next ~5 research levels |
 
 > The in-game files for Act 2 missions 3 and 4 are swapped in their header labels (m_3 says "Mission 5", m_4 says "Mission 3"). Mission order in play follows file order, so the table above is correct.
 
