@@ -32,7 +32,7 @@ See the [Missions overview](index.md) for general mechanics. See [Terran on the 
 | 6 | Expansion of the Empire | Control 80 planets | 2 new colonies |
 | 7 | Stronghold | More than 800,000 PR | 3 new colonies |
 | 8 | Top of the Galaxy | Control 200 planets | +250 loyalty |
-| 9 | Final Mission | Control 300 planets | **Infrastructure research cost cut to 1/10** (`resstart` and `resreq` divided by 10). Temporary — discount fades after roughly the next ~5 research levels |
+| 9 | Final Mission | Control 300 planets | **Infrastructure research cost cut to 1/10** (`resstart` and `resreq` divided by 10). Temporary — discount fades after roughly the next ~10 research levels |
 
 ## Notes
 
