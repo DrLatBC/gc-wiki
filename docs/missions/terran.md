@@ -32,10 +32,10 @@ See the [Missions overview](index.md) for general mechanics. See [Terran on the 
 | 6 | Expansion of the Empire | Control 80 planets | 2 new colonies |
 | 7 | Stronghold | More than 800,000 PR | 3 new colonies |
 | 8 | Top of the Galaxy | Control 200 planets | +250 loyalty |
-| 9 | Final Mission | Control N planets (variable target) | **Infrastructure research cost cut to 1/10** (`resstart` and `resreq` divided by 10) |
+| 9 | Final Mission | Control N planets (variable target) | **Infrastructure research cost cut to 1/10** (`resstart` and `resreq` divided by 10). Temporary — discount fades after roughly the next ~5 research levels |
 
 ## Notes
 
 - The two "building" missions (Act 1 m_5 and Act 2 m_1) **deduct credits** equal to the reserve threshold. Don't sit exactly at the goal — leave a buffer for ongoing operations.
-- Mission 9 in Act 2 awards the same global research-cost-reduction perk shared by all three race tracks, making endgame infrastructure research effectively trivial.
+- Mission 9 in Act 2 awards the same temporary research-cost reduction shared by all three race tracks. Save a high-value research project (or two) to start *immediately* after the mission completes so the ÷10 discount lands on the levels you actually wanted to buy.
 - Act 2 missions 5–9 share content with the Aspha Miner track.

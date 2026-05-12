@@ -34,7 +34,7 @@ See the [Missions overview](index.md) for general mechanics. See [Guardian on th
 | 6 | From Peace to War | Control 100 planets | 2 new colonies |
 | 7 | Constructing the Guardian Obelisk | 200,000,000 credit reserves | **−200,000,000 credits.** 2 new colonies |
 | 8 | Super Power | Control 200 planets | +250 loyalty |
-| 9 | Final Mission | Control N planets (variable target) | **Infrastructure research cost cut to 1/10** |
+| 9 | Final Mission | Control N planets (variable target) | **Infrastructure research cost cut to 1/10**. Temporary — discount fades after roughly the next ~5 research levels |
 
 ## Notes
 
