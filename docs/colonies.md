@@ -43,6 +43,8 @@ Players start by exploring to build up their planet count. Exploration requires 
 - Only planets you keep count toward your total
 - After ~60 planets, further growth requires combat
 
+> Full mechanics — explore costs, the land-roll multiplier, classification rules, and the post-cluster burst — are covered on the [Exploration](exploration.md) page.
+
 ## Clustering
 
 Clusters are groups of colonies merged into a single, larger colony entry. Clustering requires researching the cluster project first.

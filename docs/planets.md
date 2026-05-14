@@ -11,7 +11,7 @@ Each planet type has fixed modifiers for population growth, agriculture, and min
 | **Pop. growth** | `planet_pop_mod` (population growth rate modifier, %) |
 | **Agriculture** | `planet_agriculture_mod` (food + raw material output, %) |
 | **Mining** | `planet_mining_mod` (ore + mineral output, %) |
-| **Land** | Land roll range — drives infrastructure capacity |
+| **Land** | Base land roll range — drives infrastructure capacity. Explore inflates this by 1.2625×–1.50× (see [Exploration](exploration.md#the-explore-land-mod)) |
 | **Ore** | Initial ore deposit roll range — caps lifetime ore production |
 | **No Support** | That income type cannot be produced on this planet |
 
@@ -34,6 +34,8 @@ These are the planets you'll encounter while exploring. All can be clustered.
 | **Gas** | 0% | No Support | No Support | 2–6 | — |
 
 **Best for clustering:** Barren and Balanced have the highest land ceilings and are the only mainstream picks for endgame clusters. Forest can be acceptable on a strong roll.
+
+> **Land values shown are base rolls.** The Explore action applies a `1.25 × (1 + randrange(1,20)/100)` multiplier on top, so post-explore land is 1.2625×–1.50× the listed ceiling. A Barren rolling 935 base can hit 1,402 useable land in practice. See [Exploration](exploration.md#the-explore-land-mod).
 
 ## U-Class Planets
 

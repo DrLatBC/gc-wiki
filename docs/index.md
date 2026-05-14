@@ -20,6 +20,7 @@ Galactic Conquest is a slow-paced, spreadsheet-style 4X-adjacent MMO. Mastery is
 - [Resources](resources.md) — All resources, the market, and resource caps
 - [Income Types](income-types.md) — Tax, Commercial, Agriculture, Industry, Mining
 - [Colonies & Clustering](colonies.md) — Planets, clusters, exploring, population, and defensive list management
+- [Exploration](exploration.md) — Scouts, explore costs, the land-roll mod, classification, and the soft cap
 - [Planet Types](planets.md) — Full reference of planet-type modifiers
 - [Formulas](formulas.md) — Canonical production, population, and economy formulas
 - [Artifacts & Digging](artifacts.md) — Digging mechanics, artifact tiers, recipes, and effects
