@@ -32,6 +32,7 @@ These are the planets you'll encounter while exploring. All can be clustered.
 | **Icy** | −25% | No Support | −95% | 24–83 | 1,000–4,500 |
 | **Oceanic** | −20% | No Support | −50% | 10–50 | — |
 | **Gas** | 0% | No Support | No Support | 2–6 | — |
+| **Dead** | −95% | No Support | No Support | 1–5 | — |
 
 **Best for clustering:** Barren and Balanced have the highest land ceilings and are the only mainstream picks for endgame clusters. Forest can be acceptable on a strong roll.
 
@@ -101,8 +102,3 @@ When Viral or Collective takes an existing cluster from another race, it convert
 | Infected C2 | −35% | 0% | −35% |
 | Infected C3 | −40% | +10% | −40% |
 
-## Special Planets
-
-| Planet | Pop. growth | Agriculture | Mining | Land | Notes |
-|---|---|---|---|---|---|
-| **Dead** | −95% | No Support | No Support | 1–5 | Result of plundering a colony |
