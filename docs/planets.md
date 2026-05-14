@@ -68,7 +68,17 @@ Cluster bonuses are **additive** to the underlying land — a C3 of 100,000 land
 
 ### Collective Clusters (Similare)
 
-Collective uses assimilation. Similare clusters scale up to C5 (the only race with this).
+Collective uses assimilation. A Similare C1 is **a single assimilated planet** — not a 5-planet group like standard clusters. Each tier above multiplies by 4:
+
+| Tier | Underlying planets |
+|---|---|
+| Similare C1 | 1 |
+| Similare C2 | 4 |
+| Similare C3 | 16 |
+| Similare C4 | 64 |
+| Similare C5 | 256 |
+
+Collective is the only race with access to C5.
 
 | Cluster | Pop. growth | Agriculture | Mining |
 |---|---|---|---|
@@ -80,7 +90,14 @@ Collective uses assimilation. Similare clusters scale up to C5 (the only race wi
 
 ### Viral Clusters (Tainted)
 
-Viral uses infection. Tainted clusters cap at C4.
+Viral uses infection. A Tainted C1 is **a single infected planet** — not a 5-planet group like standard clusters. Each tier above multiplies by 4, capped at C4:
+
+| Tier | Underlying planets |
+|---|---|
+| Tainted C1 | 1 |
+| Tainted C2 | 4 |
+| Tainted C3 | 16 |
+| Tainted C4 | 64 |
 
 | Cluster | Pop. growth | Agriculture | Mining |
 |---|---|---|---|
