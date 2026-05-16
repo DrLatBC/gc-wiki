@@ -373,6 +373,48 @@ credits -= debt_interest
 
 ---
 
+## Plunder Payout
+
+One-time credit payout when destroying a colony. See [Colonies → Plundering](colonies.md#plundering) for the strategic role.
+
+```
+credits = (
+    (population × 2,500)
+    + ((5,500 × total_infra²) / planet_land)
+    + (200,000 × planets_in_colony)
+) / 15
+× race_plunder_mod
+```
+
+| Variable | Meaning |
+|---|---|
+| `population` | Population on the colony at the moment of plunder |
+| `total_infra` | Sum of all buildings on the colony (housing + commercial + industry + agri + mining) — **squared** in the formula |
+| `planet_land` | Land value of the colony |
+| `planets_in_colony` | Planets in the colony (1 / 5 / 25 / 125 for C0–C3 standard clusters) |
+| `race_plunder_mod` | Race plunder modifier (see [Races → Modifiers](races.md#race-modifiers)) |
+
+**Race plunder modifier values:**
+
+| Race | Mod | Multiplier |
+|---|---|---|
+| Marauder | **+1,900%** | 20× |
+| Collective | **+1,100%** | 12× |
+| Terran | −50% | 0.5× |
+| A.Miner | −95% | 0.05× |
+| Marauder D-class | (not playable) | — |
+| Guardian | −99% | 0.01× |
+| Viral | −99% | 0.01× |
+
+**Strategic notes:**
+
+- **Marauder + Collective are the only races that meaningfully plunder.** A Marauder hitting a fully-built C3 (high pop + high infra + 125 planets) at +1,900% can pull a credits payout in the billions.
+- **Infrastructure scales quadratically** via `total_infra²`. A fully-built colony plunders for vastly more than a sparsely-built one of the same land — the squared term dominates the payout for big builds.
+- **Dividing by land** means dense colonies (lots of infra packed onto small land) plunder for more per-infra than spread-out colonies — but small-land planets cap how much infra fits, so in practice land + infra grow together.
+- Plunder also removes the colony from your list and converts the planet to a [Dead](planets.md#standard-planets) state.
+
+---
+
 # Resource Caps
 
 Hard ceilings on stored resources. Production beyond these caps is discarded.

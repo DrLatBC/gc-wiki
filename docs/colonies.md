@@ -154,3 +154,5 @@ Plundering is the only way to destroy a colony. It converts the colony's value i
 - Discard low-value planets during the exploration phase
 - Deny captured colonies to other players (scorched earth)
 - Manage colony list order indirectly
+
+The payout is computed from population, infrastructure-squared-over-land, and planet count, then scaled by your race's plunder modifier — see [Formulas → Plunder Payout](formulas.md#plunder-payout) for the math. Marauder (+1,900%) and Collective (+1,100%) are the only races that turn plunder into a meaningful credit source; everyone else takes a deep penalty.
