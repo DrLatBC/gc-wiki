@@ -80,6 +80,20 @@ From lowest to highest: **Common → Uncommon → Rare → Unique → Major → 
 
 Higher tier artifacts are either fused from lower tier components or obtained as rare digs.
 
+### Storage Caps
+
+Each tier has a hard cap on how many you can hold at once. Excess artifacts of a tier at cap are discarded.
+
+| Tier | Cap |
+|---|---|
+| Common | 255 |
+| Uncommon | 125 |
+| Rare | 50 |
+| Unique | 25 |
+| Special | 10 |
+
+The cap is **per-tier**, not per-artifact-type — your total Commons across all Orb types share the 255 ceiling, your total Specials across all Grand types share the 10 ceiling, etc. Plan fusing accordingly: hoarding components past the cap is a loss, so either fuse them up to the next tier or use them before you hit the limit.
+
 ## Artifact Effects
 
 ### Special (Highest Tier)
