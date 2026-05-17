@@ -164,7 +164,7 @@ The cap is **per-tier**, not per-artifact-type — your total Commons across all
 | Gold Dinero | +Credits | Gray Orb, Pink Orb, Aqua Orb, Turquoise Orb, Plum Orb |
 | Opal Dinero | -Credits | Energy Pod, Yellow Orb, Aqua Orb, Blue Orb, Energy Pod |
 | Organic Base | Used for fusing | Dig only — cannot be crafted |
-| Platinum Dinero | +Credits | Aqua Orb, Plum Orb, Pink Orb, Pink Orb, Plum Orb |
+| Platinum Dinero | +Credits | Aqua Orb, Plum Orb, Pink Orb, Pink Orb, Aqua Orb |
 | Silver Dinero | +Credits | Yellow Orb, White Orb, Gray Orb, Purple Orb, Pink Orb |
 | Topaz Dinero | -Credits | Blue Orb, Golden Orb, Orange Orb, Turquoise Orb, Pink Orb |
 
@@ -177,7 +177,7 @@ Common orbs are the raw material of the artifact system. They are used to fuse U
 | Aqua Orb | Grand Dinero, Grand Gente, Grand Tierra, Grand Tierra |
 | Black Orb | Grand Estructura, Grand Alimento, Grand Cosecha, Grand Gente, Grand Tierra |
 | Blue Orb | Grand Alimento, Grand Cosecha, Grand Gente, Grand Tierra, Grand Requerido |
-| Brown Orb | Grand Gente, Grand Gente, Grand Tierra, Grand Tierra |
+| Brown Orb | Grand Alimento, Grand Gente, Grand Tierra, Grand Tierra |
 | Energy Pod | Grand Dinero, Grand Alimento, Grand Producto, Grand Barrera, Grand Requerido |
 | Golden Orb | Grand Alimento, Grand Alimento, Grand Cosecha, Grand Cosecha |
 | Gray Orb | Grand Requerido, Grand Requerido, Grand Barrera, Grand Barrera |
