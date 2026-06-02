@@ -28,13 +28,21 @@ One submission of the Explore form, with `turns_required` turns allocated, yield
 
 ### Costs
 
+The Explore action itself **deducts no credits** — its direct cost is **turns**. What scales with empire size is the *scanning requirement* per discovery:
+
 ```
-explore_credit_cost = 5000 × 1.2 ^ (planet_count - 1)
+explore_requirement = 5000 × 1.2 ^ (planet_count - 1)
 ```
 
-Cost compounds as the empire grows. Early discoveries are nearly free; late discoveries cost meaningfully more credits per attempt.
+This is the exploration-points needed for the next discovery (source: `res_researchstart = 5000`, `res_researchincrease = 1.2`, i.e. compounding +20% difficulty). It drives the **turn** cost via your fleet's scanning power:
 
-Turn cost is whatever `turns_required` reads at the time of the explore — buy scouts to keep this at 1.
+```
+turns_required = ceil((explore_requirement − current_explore_points) / fleet_scanning_power)
+```
+
+As the empire grows the requirement compounds, so each discovery needs more scan points → more turns, unless you add scouts. The strategic target is `turns_required = 1`; buy more scouts to hold it there.
+
+**Credits do enter indirectly** — exploring requires a scout fleet, and scouts cost credits to build and carry ongoing upkeep. So "exploring is free" is only true per-attempt; the scanning power that keeps `turns_required` low is paid for in ships.
 
 ### What You Find
 
@@ -50,21 +58,21 @@ The result page reports:
 
 ## The Explore Land Mod
 
-The land value rolled by Explore is **not** the base land range listed on [Planet Types](planets.md). Explore applies a multiplier on top:
+The land value rolled by Explore is **not** simply the base land range listed on [Planet Types](planets.md). Explore first rolls a **uniform random value across the planet type's full range**, then applies multipliers on top:
 
 ```
-useable_land = base_max_land × 1.25 × (1 + randrange(1, 20) / 100)
+useable_land = floor( round( randrange(land_min, land_max) × 1.25 ) × (1 + randrange(1, 20) / 100) )
 ```
 
-The `randrange(1, 20)/100` term is a uniform 0.01–0.20 bonus. The total multiplier is **1.2625× to 1.50×** the base max land roll.
+So each roll starts somewhere in `[land_min, land_max]` (not at the max), then gets a flat **×1.25**, then a uniform **0.01–0.20** bonus (the `randrange(1,20)/100` term). The bonus multiplier is universal because every account has premium. Net effect: any given roll is `1.2625× – 1.50×` of *whatever* base value was rolled — so the *best possible* roll is `land_max × 1.50`, but a typical roll is much lower.
 
-**Example.** A Barren has a base land ceiling of 935. Maximum possible explore roll:
+**Example (maximum possible).** A Barren with a base land ceiling of 935 can roll at most:
 
 ```
 935 × 1.25 × 1.20 = 1,402.5 useable land
 ```
 
-This applies to every planet type, U-classes included. A U.Large with a 10,000 base ceiling can roll up to ~15,000 useable land post-mod.
+A typical Barren rolls well below this, since the base is random across its range. This multiplier applies to every planet type, U-classes included — a U.Large with a 10,000 base ceiling can reach ~15,000 at the top end. (There is also a rare "special" multiplier that can push a roll *above* the 1.50× ceiling — the "S-class" mega-roll referenced on [Colonies](colonies.md).)
 
 > All land ranges on [Planet Types](planets.md) are **base values**. Add 25–50% on top to see what's actually possible from an Explore.
 

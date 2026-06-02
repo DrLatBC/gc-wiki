@@ -14,7 +14,7 @@ See the [Missions overview](index.md) for general mechanics. See [Terran on the 
 | 2 | Commercial Upgrade | Level 5 Commercial Infrastructure Tech | +20 loyalty |
 | 3 | Exploration | Control 4 planets | +20 loyalty |
 | 4 | Coming Out of Protection | 10,000 PR | +20 loyalty |
-| 5 | Government Control Center | 5,000,000 credit reserves | **−5,000,000 credits.** +2 levels Commercial Infrastructure Tech |
+| 5 | Government Control Center | 5,000,000 credit reserves | **−5,000,000 credits.** +2 levels Housing Infrastructure Tech |
 | 6 | More Planets | Control 15 planets | 2 new colonies |
 | 7 | Research | 1× level-20 infrastructure tech | 3 new colonies |
 | 8 | Increasing Your Defenses | 50,000 PR | 1 new colony |

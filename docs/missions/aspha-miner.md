@@ -13,7 +13,7 @@ See the [Missions overview](index.md) for general mechanics. See [Aspha Miner on
 | 1 | Self Sustainable | Have at least 1,000 goods | +20 loyalty all colonies |
 | 2 | Industry Upgrade | Level 5 Industry Infrastructure Tech | +20 loyalty |
 | 3 | Exploration | Control 4 planets | +20 loyalty |
-| 4 | Constructing the Asphalt Temple | 500,000 credit reserves | **−500,000 credits.** +5 levels Industry Infrastructure Tech |
+| 4 | Constructing the Asphalt Temple | 500,000 credit reserves | **−500,000 credits.** +5 levels Mining Infrastructure Tech |
 | 5 | Standing Up | 15,000 PR | +20 loyalty |
 | 6 | Constructing the Asphalt Arch | 8,000,000 credit reserves | **−8,000,000 credits.** 2× alien class-G ships (type 44) |
 | 7 | Research | 1× level-20 infrastructure tech | 2 new colonies |

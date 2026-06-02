@@ -107,13 +107,13 @@ List order cannot be manually rearranged — it must be managed indirectly throu
 
 ### How Many Colonies Can You Lose Per Attack?
 
-| PR Killed | Colonies Lost |
+| PR Killed (player vs player) | Colonies Lost |
 |-----------|--------------|
-| ≥10% of defender's ship PR | 1 |
-| ≥20% of defender's ship PR | 2 |
-| ≥40% of defender's ship PR | 3 |
+| ≥30% of defender's ship PR (win threshold) | 1 |
+| ≥55% of defender's ship PR | 2 |
+| ≥75% of defender's ship PR | 3 |
 
-A maximum of **4 colonies** can be lost in a single Damage Protection period (typically as a 1+3 or 2+2 split across multiple attacks). Losing 3 in one period is the practical norm; 4 is possible but rare.
+A maximum of **3 colonies** can be lost in a single Damage Protection period. Each attack's colony count is reduced by however many you've already lost that period, and once 3 are gone further attacks are blocked — so 3 is the hard ceiling (a single full fleet wipe can take all 3 at once). Against NPCs the per-attack tiers are lower (≥10% → 1, ≥50% → 2, ≥60% → 3).
 
 ## Population
 

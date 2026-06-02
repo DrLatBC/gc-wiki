@@ -39,6 +39,6 @@ See the [Missions overview](index.md) for general mechanics. See [Guardian on th
 ## Notes
 
 - Guardian Act 1 m_1 is the **only mission in any race's track that rewards ore** (+5,000). Reflects the fact that Guardian struggles with early resources.
-- Act 2 m_1 is unique: the automated reward (a ship grant) is commented out in the game source, leaving the player to PM an admin for manual fulfilment. Treat as an admin-gated reward.
+- Act 2 m_1 is unique: the automated reward (a ship grant) is disabled, leaving the player to PM an admin for manual fulfilment. Treat as an admin-gated reward.
 - The two big credit-burning missions (Act 1 m_8 and Act 2 m_7) cost a combined **225 million credits** — the largest sink of any track. Plan reserves accordingly.
 - Guardian Act 2 does **not** share content with Terran/Aspha — it has its own unique mission set throughout.

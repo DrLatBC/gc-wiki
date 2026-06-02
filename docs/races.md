@@ -28,7 +28,7 @@ All economic modifiers are stored as percentages added to a 1.0× baseline. Conv
 | Plunder | — | Bonus credits when plundering colonies (no income-cycle effect) |
 | Minerals | `race_mineral_mod` | Minerals from mining |
 
-> **Goods Demand quirk:** Counter-intuitively, *higher* goods demand is *better* for income. Population consumes goods, surplus is auto-sold at 5.5 credits/good — so Terran's +350% is the engine behind their tax-with-CGs power, not a penalty.
+> **Goods Demand quirk:** Counter-intuitively, *higher* goods demand is *better* for income. Population consumes goods, and each **consumed** good converts to 5.5 credits — so more demand means more goods sold to your population. Terran's +350% is the engine behind their tax-with-CGs power, not a penalty. (Surplus beyond demand is retained in your stockpile, not sold.)
 
 ## Difficulty & Colony Caps
 
@@ -67,7 +67,7 @@ All economic modifiers are stored as percentages added to a 1.0× baseline. Conv
 
 ## Marauder
 
-- **Viable income:** Agriculture, Commercial
+- **Viable income:** Agriculture, Industry
 - **Cannot explore** — all land must be acquired through combat against NPCs or other players
 - Standard clustering (C1/C2/C3)
 - Can die if all planets are lost

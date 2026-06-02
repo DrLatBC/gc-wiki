@@ -10,21 +10,25 @@ Attacking costs **5 turns**. The real turn cost of combat is ship construction �
 
 | Situation | Range |
 |-----------|-------|
-| Punch up (attack stronger player) | Up to 2× your PR |
-| Punch down (attack weaker player) | Down to your PR ÷ 1.3 |
-| Fed war punch down | Down to your PR ÷ 1.5 |
+| Punch up | Up to **2×** your PR (**3×** if your PR ≥ 200M) |
+| Punch down — target ranked 6th or lower | Down to your PR **÷ 1.3** |
+| Punch down — top-5-ranked target | Down to your PR **÷ 1.5** |
+| Fed war / Enslave | 2× up, ÷1.5 down |
+| Counter-attack | No range restriction |
 
-Fed war only widens the punch-down floor. The 2× punch-up ceiling is universal.
+The punch-up ceiling widens to 3× for large empires (≥200M PR). Punch-down depends on the target's rank — top-5 targets can be hit down to ÷1.5, everyone else only to ÷1.3. Fed war and enslave attacks use a flat 2× up / ÷1.5 down, and counter-attacks have no range restriction.
 
 ### Battle Outcomes
 
-The attacker must kill at least 10% of the defender's ship PR to win any colonies. Outcome is determined by damage dealt:
+The attacker must kill at least **30%** of the defender's ship PR to win any colonies (vs NPCs the win threshold is 10%; enslave requires 60%). Once won, the number of colonies taken scales with how much of the defender's PR you destroyed:
 
-| Defender Ship PR Killed | Colonies Taken |
+| Defender Ship PR Killed (player vs player) | Colonies Taken |
 |------------------------|---------------|
-| ≥10% | 1 |
-| ≥20% | 2 |
-| ≥40% | 3 |
+| ≥30% (win) | 1 |
+| ≥55% | 2 |
+| ≥75% | 3 |
+
+Against NPCs the tiers are lower: ≥10% → 1, ≥50% → 2, ≥60% → 3. A complete fleet wipe takes 3 colonies outright.
 
 The winner is the side that loses the least PR. Exception: if all ships in the 10 active stacks are destroyed, the other side wins regardless of PR lost.
 
@@ -39,16 +43,6 @@ Ships are organized into stacks. Each ship type occupies one stack — duplicate
 - Maximum of **10 stacks** enter battle. Additional stacks beyond 10 are ignored.
 - In round 1, stacks are ordered **highest PR to lowest PR** (top to bottom).
 - Each stack is paired with the opposing stack at the same position.
-
-## Battle Rounds
-
-### Round 1
-
-1. Each stack is paired with the opposing stack at the same position.
-2. The stack with higher **Range** fires first. Ties go to the **defender**.
-3. Kills are calculated (see Combat Formula below).
-4. Surviving units of the receiving stack fire back (subject to ND/NR rules).
-5. Unpaired stacks (when one side has more stacks) **flank** — firing at a random surviving enemy stack.
 
 ## Battle Rounds
 
@@ -145,10 +139,18 @@ PR refreshes only on specific actions (logging in, attacking, building ships, et
 
 ## Damage Protection (DP)
 
-DP is granted when a defender loses 40% or more of their fleet in a single engagement while defending. It can also trigger after losing colonies.
+DP is driven by a hidden **damage counter** that fills based on how much of your defending fleet's power you lose each engagement — and it accrues whether or not the attack succeeds (a fully *repelled* attack still advances it):
 
-- Maximum colonies lost in one DP period: **4** (typically as 1+3 or 2+2 across multiple attacks)
-- Losing 3 in one period is the practical norm; 4 is possible but rare
+| Fleet power lost in the engagement | Counter gain |
+|---|---|
+| ≥40% | +3 |
+| ≥20% | +2 |
+| ≥10% | +1 |
+| <10% | +0 |
+
+Once the counter reaches **3**, you're under DP and further attacks are blocked. So a single engagement where you lose ≥40% of your fleet drops you straight into DP, but smaller losses bank progress too — two ≥20% defenses (or three ≥10%) reach DP without any single 40% hit. Losing colonies advances the same counter.
+
+- Maximum colonies lost in one DP period: **3**. Each attack's colony count is reduced by however many you've already lost that period, and once 3 have been taken further attacks are blocked — so the total caps at 3 (a single full wipe can take all 3 at once)
 - DP is lifted when: the timer expires, the player builds offensive ships, or the player attacks
 - Scouts and Starbases do not break DP
 

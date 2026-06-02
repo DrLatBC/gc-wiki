@@ -26,10 +26,12 @@ The dig schedule runs as **four groups per day**, each a 4-hour window, on a 6-h
 
 | Group | Window (ET) |
 |---|---|
-| Group 1 | 00:00 – 04:00 |
-| Group 2 | 06:00 – 10:00 |
-| Group 3 | 12:00 – 16:00 |
-| Group 4 | 18:00 – 22:00 |
+| Group 1 | 18:00 – 22:00 |
+| Group 2 | 00:00 – 04:00 |
+| Group 3 | 06:00 – 10:00 |
+| Group 4 | 12:00 – 16:00 |
+
+(Group numbering matches the in-game `com_dig_times` schedule, which starts the day's groups at the 18:00 window.)
 
 Outside these four windows, **Default Dig** is active (low yields).
 
@@ -50,7 +52,7 @@ Each group is structured as **two waves** separated by an internal Default Dig g
 | +3:01 – +3:20 | **UnCommon** | 20 min |
 | +3:21 – +4:00 | Common | 40 min |
 
-So a full Group 4 (18:00–22:00 ET) plays out as:
+So a full Group 1 (18:00–22:00 ET) plays out as:
 
 | Time (ET) | Type |
 |---|---|

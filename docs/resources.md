@@ -26,9 +26,14 @@ Used exclusively for building ships. They have no other purpose.
 
 ## The Market
 
-The market is player-driven. Sellers post resources at a price they choose within dev-set min/max bounds. A secondary safeguard prevents posting prices too far above the current market rate to prevent artificial price spikes.
+The market is player-driven. Sellers post resources at a price they choose within dev-set min/max bounds (per-resource). Buyers purchase the cheapest posted listings first.
 
-If no players are selling a resource, buyers are out of luck — with one exception. A **black market** provides an NPC source for Food, CGs, and minerals at above-market prices. The black market is buy-only; there is no NPC buyer of last resort. If demand dries up, sellers are stuck.
+If no players are selling a resource, buyers are out of luck — with one exception. A **black market** provides an NPC source for **Ore**, **Raw Material**, and the **6 ship minerals** at quantity-scaling prices. It does **not** sell Food or Consumer Goods. On the live (real-time) server, Raw Material is unavailable on the black market — only Ore and the 6 minerals are sold there. The black market is buy-only; there is no NPC buyer of last resort. If demand dries up, sellers are stuck.
+
+Black-market unit prices scale with how much of the resource you already own (so bulk buying gets progressively more expensive):
+
+- **Minerals:** `1,250 × 1.05^(owned ÷ 1,000,000)`, capped at 1,000,000/unit
+- **Ore:** `25,000 × 1.1^(owned ÷ 10,000)`, capped at 10,000,000/unit
 
 ## Resource Flow
 
@@ -60,6 +65,8 @@ Hard ceilings on stored resources. Production beyond these caps is discarded.
 
 Going into negative credits triggers compounding 1.5%-per-turn debt interest — see [Formulas](formulas.md#debt-interest).
 
-## Goods → Credits Auto-Conversion
+## Goods → Credits (Population Consumption)
 
-After population consumes its share, surplus goods on each colony are auto-sold at **5.5 credits per good** (per colony, summed across your empire). This is the primary mechanism by which produced goods become income — see the full per-colony order in [Formulas](formulas.md#calculation-order).
+Each colony's population **demands** `(pop ÷ 10) × race_good` goods per turn, drawn from your empire-wide good stockpile. The goods your population **consumes** are what generate income: each consumed good converts to **5.5 credits**. Any **surplus** goods beyond population demand are **kept in your stockpile** (up to the 25-billion cap), not auto-sold.
+
+In other words: you are paid 5.5 credits for every good your population eats — you are *not* paid for leftovers, and leftovers are retained, not dumped. This is the primary mechanism by which produced goods become income — see the full per-colony order in [Formulas](formulas.md#calculation-order).

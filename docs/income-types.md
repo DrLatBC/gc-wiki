@@ -14,8 +14,9 @@ Tax income converts population into credits. Population is fed by Food (required
 
 **Formula:** `((Population / 2) + (Population × Loyalty / 5000)) × Race Tax Modifier × Turns`
 
-- Loyalty maxes at 5,000 and is trivial to raise for most races (costs a small number of turns)
-- At 5,000 loyalty the loyalty term equals the base population term — effectively doubling tax income
+- Loyalty maxes at 5,000 and is raised at +5 loyalty per turn spent (free accounts capped at 3 turns per action)
+- The loyalty term equals the base population term at **2,500** loyalty — that's where tax income exactly doubles (`pop/2 + pop/2 = pop`)
+- At max **5,000** loyalty the loyalty term is twice the base term, so tax reaches `1.5 × pop` — **triple** the zero-loyalty income, not double
 - Guardians **cannot raise loyalty** — an intentional nerf since Tax is their only viable income path
 
 ## Commercial
@@ -85,7 +86,7 @@ Listed best to worst within each race:
 |------|-------------------|
 | Guardian | Tax |
 | Aspha Miner | Tax, Mining, Industry |
-| Marauder | Agriculture, Commercial |
+| Marauder | Agriculture, Industry |
 | Terran | Agriculture, Commercial, Industry |
 | Collective | Agriculture, Tax |
 | Viral | Tax, Commercial, Agriculture |

@@ -19,7 +19,7 @@ A baseline planet has all modifiers at 0% (i.e. `100/100 = 1.0×` in the formula
 
 ## Standard Planets
 
-These are the planets you'll encounter while exploring. All can be clustered.
+These are the planets you'll encounter while exploring. All can be clustered **except Dead** (see note below).
 
 | Planet | Pop. growth | Agriculture | Mining | Land | Ore |
 |---|---|---|---|---|---|
@@ -35,6 +35,8 @@ These are the planets you'll encounter while exploring. All can be clustered.
 | **Dead** | −95% | No Support | No Support | 1–5 | — |
 
 **Best for clustering:** Barren and Balanced have the highest land ceilings and are the only mainstream picks for endgame clusters. Forest can be acceptable on a strong roll.
+
+> **Note on Dead:** Dead is a rare roll (it comes from the same uncommon roll table as the U-class planets, not the normal explore pool) and **cannot be clustered, infected, or assimilated**. With 1–5 land it's pure junk — plunder it. It's listed here only for completeness.
 
 > **Land values shown are base rolls.** The Explore action applies a `1.25 × (1 + randrange(1,20)/100)` multiplier on top, so post-explore land is 1.2625×–1.50× the listed ceiling. A Barren rolling 935 base can hit 1,402 useable land in practice. See [Exploration](exploration.md#the-explore-land-mod).
 
@@ -54,7 +56,7 @@ Viral and Collective **cannot use U-class planets for income** (infection/assimi
 
 ## Cluster Planet Types
 
-When colonies cluster, the resulting cluster gets its own planet-type modifier on top of the contributing planets. These bonuses stack with the underlying planet rolls.
+When colonies cluster, the component colonies are **merged into a single colony** whose planet type becomes the cluster type — and that cluster's modifier is the **only** type modifier that then applies. The component planets' individual type modifiers do **not** carry over (the originals are consumed by the merge). What *is* preserved is their **land and infrastructure**, which are summed into the new cluster.
 
 ### Standard Clusters (Terran, Aspha Miner, Guardian, Marauder)
 
@@ -64,7 +66,7 @@ When colonies cluster, the resulting cluster gets its own planet-type modifier o
 | Cluster Lvl 2 | +20% | +30% | +20% |
 | Cluster Lvl 3 | +30% | +45% | +30% |
 
-Cluster bonuses are **additive** to the underlying land — a C3 of 100,000 land gets a +30% pop / +45% agri / +30% mining boost on top of whatever its component planets contribute.
+Land and infrastructure are **additive** (summed from the components), while the cluster's pop/agri/mining modifier **replaces** the component planet modifiers. So a C3 with 100,000 summed land applies a flat +30% pop / +45% agri / +30% mining to that whole colony.
 
 ### Collective Clusters (Similare)
 

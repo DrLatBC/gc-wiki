@@ -97,6 +97,23 @@ How fast a ship can be constructed. Build rate is the primary pacing mechanic fo
 
 Credits paid per turn to maintain ships. Upkeep varies by race — the spreadsheet includes separate upkeep columns for Viral and Collective whose racial modifiers differ significantly.
 
+**How upkeep is calculated.** A ship's upkeep is *computed from its stats*, not read from a stored value. The derivation:
+
+```
+base   = (power × build_turns) / 10
+weapon = total_weapons × (1 + (weapon_types − 1) / 10) × range^1.5
+armor  = (hull × 5) × (2 + total_shields)
+upkeep = base × (weapon + armor) × race_upkeep_mod
+```
+
+- `total_weapons` = sum of the ship's weapon values; `weapon_types` = how many of the 4 weapon types it uses (ships splitting damage across multiple types cost more).
+- `total_shields` = sum of the four shield values.
+- Then traits adjust it: **÷1.5** if the ship has *no* return-fire and *no* long-range, **×1.5** for long-range, and starbases get an extra **×1.2**.
+- `race_upkeep_mod` scales the whole result — cheapest to priciest: **Guardian `0.8` < Marauder `1.9` < Collective `3.3` < Viral `7` < Terran `8` < Aspha Miner `10.1`** (per 1,000,000). This is why the same neutral ship costs a Guardian a fraction of what it costs an Aspha.
+- A handful of ships are hardcoded to **0 upkeep**.
+
+See [Formulas → Ship Upkeep](formulas.md#maintenance--upkeep) for the same formula in the economy context. The takeaway for play: idle scout fleets bleed credits every turn for zero benefit — **disband them when you're done exploring**.
+
 ### Mineral Costs
 
 Ship construction consumes ship minerals (Terran Metal, Red Crystal, White Crystal, Rutile, Composite, Strafez Organism). Mineral availability on the market is a real constraint for active combat players.
