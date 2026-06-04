@@ -55,17 +55,18 @@ Capped by ore deposit on the colony — production stops when the deposit runs o
 ## Minerals from Mining
 
 ```
-minerals = 1 + sqrt(
+minerals =  ceiling(sqrt(
     mining × (numplanets × 0.3)
     × (1 + 0.4 × mining_research)
     × (planet_mining_mod / 100)
     × race_mineral_mod
-) × turns
+)) × turns
 ```
 
 **Effect of research:** +40% per mining research level (scalar inside the sqrt).
 **Colony breadth matters:** More planets in the colony increases mineral output.
 **Diminishing returns:** Square root means high mining values produce sharply diminishing returns vs. linear ore output.
+**Ceiling:** This is always rounded up.
 
 ---
 
