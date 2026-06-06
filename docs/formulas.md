@@ -55,13 +55,15 @@ Capped by ore deposit on the colony — production stops when the deposit runs o
 ## Minerals from Mining
 
 ```
-minerals =  ceiling(sqrt(
+minerals = ceiling(sqrt(
     mining × (numplanets × 0.3)
     × (1 + 0.4 × mining_research)
     × (planet_mining_mod / 100)
     × race_mineral_mod
 )) × turns
 ```
+
+The per-turn gain is the square root **rounded up to a whole unit each turn** (`ceiling`), then accumulated across turns.
 
 **Effect of research:** +40% per mining research level (scalar inside the sqrt).
 **Colony breadth matters:** More planets in the colony increases mineral output.
@@ -419,13 +421,17 @@ credits -= debt_interest
 One-time credit payout when destroying a colony. See [Colonies → Plundering](colonies.md#plundering) for the strategic role.
 
 ```
-credits = (
-    (population × 2,500)
-    + ((5,500 × total_infra²) / planet_land)
-    + (750,000 × planets_in_colony)
-) / 15
-× race_plunder_mod
+credits = fix(
+    (
+        (population × 2,500)
+        + ((5,500 × total_infra²) / planet_land)
+        + (750,000 × planets_in_colony)
+    ) / 15
+    × race_plunder_mod
+)
 ```
+
+The entire expression is float math, truncated toward zero (`fix`) **exactly once** — at the very end, after the race multiplier. None of the intermediate terms (including the `total_infra²` term) are rounded on their own.
 
 | Variable | Meaning |
 |---|---|
