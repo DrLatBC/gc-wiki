@@ -121,25 +121,25 @@ When Viral or Collective takes an existing cluster from another race, it convert
 
 | Cluster | Pop. growth | Agriculture | Mining | Industry |
 |---|---|---|---|---|
-| Assimilated C0 | *(base)* | *(base)* | *(base)* | −30% |
+| Assimilated C0 | 0% | −20% | 0% | −30% |
 | Assimilated C1 | 0% | −20% | 0% | −20% |
 | Assimilated C2 | −5% | −10% | −5% | −10% |
 | Assimilated C3 | −10% | 0% | −10% | 0% |
-| Infected C0 | *(base)* | *(base)* | *(base)* | −20% |
+| Infected C0 | −30% | −10% | −30% | −20% |
 | Infected C1 | −30% | −10% | −30% | −10% |
 | Infected C2 | −35% | 0% | −35% | 0% |
 | Infected C3 | −40% | +10% | −40% | +10% |
 
-> **C0 tiers** (Assimilated C0, Infected C0) are the freshly-captured *single* colony before it's clustered up. Their pop/agri/mining modifiers **inherit the captured base planet** (*(base)* above — confirmed by devs), while Patch 106 assigns them a fixed Industry penalty (Assimilated C0 −30%, Infected C0 −20%). Assimilated C3 and Infected C2 carry **+0% Industry** (no value listed in the patch).
+> **C0** is the freshly-captured single colony before it's clustered up. It uses the **same pop/agri/mining as C1**, just with a steeper Industry penalty (Assimilated C0 −30%, Infected C0 −20%). Assimilated C3 and Infected C2 have **+0% Industry** (no value listed in the patch).
 
 ### Gordo Colony Types (Patch 106)
 
-The Planetary Fracture system (see [Artifacts → Gordos & Planetary Fracture](artifacts.md#gordos-planetary-fracture-patch-106)) introduced two new gordoed colony types. Once a Gordo fills a colony's land past its threshold, the colony begins gaining planets and takes on one of these types:
+Gordoing a colony never changes its modifiers — it only adds land and planets. The planet keeps its type's pop/agri/mining/industry mods, whether it's an Icy, a Desert, a Barren, or any U-class. Two new type names cover the gordoed state:
 
 | Type | What it is | Modifiers |
 |---|---|---|
-| **Cluster Base** | A regular single-planet colony that has been gordoed (the pre-C1 gordoed state) | **Inherits the base planet's modifiers** |
-| **U-Class Cluster** | A U-class colony gordoed past the threshold — available for **all** U-class types | **Inherits the base U-class planet's modifiers** |
+| **Cluster Base** | A non-U-class single planet that has been gordoed (the pre-C1 gordoed state) | Same as its base planet type |
+| **U-Class Cluster** | A gordoed U-class planet (any U-class type) | Same as its base U-class type |
 
-> **Gordoing doesn't change a colony's percentage modifiers** (confirmed by devs) — it only adds land and planets while keeping the underlying planet type's pop/agri/mining/industry mods. A gordoed **U.Large** keeps U.Large's mods; a grown **U.Fertile** keeps its +175% agriculture no matter how many planets it holds (a 125-planet Fertile gets the same agri bonus as a 1-planet Fertile). This makes Gordos the way to scale a U-class colony's land and planet count *without* losing its signature bonus. (Gordos could already inflate U-class land with no cap pre-106; what 106 changed is routing growth into **planet count** — turning them into U-Class Clusters — under the new land threshold.)
+So a gordoed U.Fertile keeps its +175% agriculture no matter how many planets it holds — a 125-planet Fertile has the same per-type bonuses as a 1-planet Fertile. See [Artifacts → Gordos & Planetary Fracture](artifacts.md#gordos-planetary-fracture-patch-106) for the targeting and threshold rules.
 
