@@ -128,28 +128,21 @@ Where `base_food` is the food produced by the Food from Agriculture formula abov
 
 Industry consumes raw materials to produce consumer goods. If raw materials run out mid-production, output is based on what was available.
 
-**If `raw_materials ≥ industry × turns` (full production):**
+**Production (full):**
 
 ```
-consumer_goods = floor(
-    ((industry × turns) + (industry × turns × industry_research × 0.1))
-    × race_industry_mod
-)
-raw_materials_consumed = industry × turns
+goods_base = (industry × turns) + (industry × turns × industry_research × 0.1)
+           = industry × turns × (1 + industry_research × 0.1)
+
+consumer_goods         = round(goods_base × (planet_industry_mod / 100) × race_industry_mod)
+raw_materials_consumed =       goods_base × (planet_industry_mod / 100) × race_industry_mod × 0.3
 ```
 
-**If `raw_materials < industry × turns` (resource-limited):**
-
-```
-consumer_goods = floor(
-    (raw_materials + (raw_materials × industry_research × 0.1))
-    × race_industry_mod
-)
-raw_materials_consumed = raw_materials  (all remaining)
-```
+`planet_industry_mod` is the colony's planet/cluster **Industry modifier — added in Patch 106** (see [Planet Types → Industry Modifiers](planets.md#industry-modifiers)). Colony types with no listed modifier use `100` (×1.0). Note Industry rounds to nearest (`round()`), **not** `floor()` like most other outputs.
 
 **Effect of research:** +10% consumer goods per industry research level.
-**Cost:** 1 raw material per industry building per turn at full production.
+
+**Cost (changed in Patch 106):** Industry consumes raw materials equal to **exactly 30% of the consumer goods it produces** — the same `goods_base × planet_mod × race_mod` value (before rounding) multiplied by `0.3` — replacing the old flat "1 raw material per industry building per turn." Example: 5,000,000 goods → 1,500,000 raw materials. The patch notes this works out to roughly 6% of net income with goods priced at 5, and ~10% with goods at 3. If raw materials run short mid-cycle, output is capped to what the available RM can support.
 
 ---
 
@@ -190,7 +183,7 @@ credits = ((population / 2) + (population × loyalty / 5000)) × race_tax_mod ×
 ```
 
 **Effect of population:** Each population unit contributes a flat 0.5 credits per turn baseline.
-**Effect of loyalty:** Loyalty adds `population × (loyalty / 5000)` on top of the `population / 2` base term. The loyalty term equals the base term at **2,500** loyalty (where tax income exactly doubles). At the **5,000** cap the loyalty term is `population` — twice the base — so total tax reaches `1.5 × population`, **triple** the zero-loyalty income. Loyalty is hard-capped at 5,000; it cannot go higher.
+**Effect of loyalty:** Loyalty adds `population × (loyalty / 5000)` on top of the `population / 2` base term. The loyalty term equals the base term at **2,500** loyalty (where tax income exactly doubles). At **5,000** loyalty the loyalty term equals `population` — twice the base — so total tax reaches `1.5 × population`, **triple** the zero-loyalty income. As of **Patch 106**, 5,000 is the *base* personal cap, **not** an absolute ceiling: completing loyalty-reward missions raises your cap above 5,000, and the `loyalty / 5000` term keeps scaling linearly past 1.5 × population. Guardians have a base cap of **2,500** (raised by their loyalty missions — all of Act 1 = +500 → 3,000). See [Loyalty (raising)](#loyalty-raising) for how loyalty now accrues.
 **Effect of race:** Race tax modifier scales the entire result.
 
 ---
@@ -486,14 +479,20 @@ Starting at 2 and compounding 20%, a line reaches the 750 cap around level ~33; 
 
 ## Loyalty (raising)
 
-Loyalty is bought per colony with turns, and also costs credits:
+**Reworked in Patch 106.** The old manual "reward loyalty" action — which cost both turns *and* credits (`population × 2 × turns_spent^1.5`) — has been **removed entirely**. Loyalty now raises automatically:
 
-```
-loyalty_gained = turns_spent × 5
-credit_cost    = population × 2 × turns_spent^1.5
-```
+- Whenever you **spend a turn while holding a supply of Consumer Goods**, every colony gains **+5 loyalty per turn used**, climbing toward your personal cap.
+- There is **no credit cost** and no per-action turn cap — it rides along with normal turn use.
+- If you run out of Consumer Goods, loyalty stops rising (turns spent without CGs in stock grant no loyalty).
 
-Loyalty is capped at **5,000** (see [Tax Credit Income](#tax-credit-income) for what it's worth). Free accounts can spend at most 3 turns per action; **Guardians cannot raise loyalty at all** (hard-blocked in the source).
+**Personal cap** = race base + loyalty-reward mission bonuses:
+
+| Race | Base cap | With loyalty missions |
+|---|---|---|
+| Guardian | 2,500 | +500 for all of Act 1 → 3,000 (climbs further with later loyalty missions) |
+| All other races | 5,000 | raised **above** 5,000 by completed loyalty-reward missions |
+
+**Guardians can now raise loyalty** (up to their 2,500 base, before missions) — this reverses the pre-106 hard block. See [Tax Credit Income](#tax-credit-income) for what loyalty is worth.
 
 ---
 
@@ -503,13 +502,15 @@ Hard ceilings on stored resources. Production beyond these caps is discarded.
 
 | Resource | Cap |
 |---|---|
-| Credits (positive) | 5,000,000,000,000 (5 trillion) |
+| Credits (positive) | 50,000,000,000,000 (50 trillion) |
 | Credits (debt floor) | -200,999,999,999 |
-| Raw Materials | 25,000,000,000 (25 billion) |
-| Food | 25,000,000,000 (25 billion) |
-| Goods | 25,000,000,000 (25 billion) |
-| Ore | 2,000,000,000 (2 billion) |
-| Each mineral type (1–6) | 2,000,000,000 (2 billion) |
+| Raw Materials | 100,000,000,000 (100 billion) |
+| Food | 100,000,000,000 (100 billion) |
+| Goods | 100,000,000,000 (100 billion) |
+| Ore | 10,000,000,000 (10 billion) |
+| Each mineral type (1–6) | 10,000,000,000 (10 billion) |
+
+> **Patch 106** (June 2026) raised these: Credits 5T → 50T; Food / Goods / Raw Materials 25B → 100B; Ore and each mineral 2B → 10B. Debt floor unchanged.
 
 ---
 
@@ -520,9 +521,9 @@ Hard ceilings on stored resources. Production beyond these caps is discarded.
 | Mining | Ore (linear) | Minerals (sqrt) | +10% ore, +40% minerals | Minerals scale with planet count, ore capped by deposit |
 | Agriculture | Food | Raw Materials | +10% each | Both outputs equal |
 | Commercial | Consumer Goods | Food bonus + Empire credits | +8% CG, +10% empire credits | Consumes 2 RM per building per turn |
-| Industry | Consumer Goods | — | +10% CG | Consumes 1 RM per building per turn |
+| Industry | Consumer Goods | — | +10% CG | Consumes 30% of CG output as RM (Patch 106); planet Industry modifier applies; rounds with round() not floor() |
 | Housing | Population cap | — | +1 cap per housing | Cap = (10 + research) × housing; Collective doubles cap |
-| Population | Tax Credits | — | — | Loyalty 2500 doubles income; 5000 (cap) triples it |
+| Population | Tax Credits | — | — | Loyalty 2500 doubles income; 5000 triples it (base cap, raised above 5000 by missions) |
 
 ---
 

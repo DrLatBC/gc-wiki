@@ -17,7 +17,7 @@ Only **three races** have a mission track. The remaining races can be played nor
 
 **Max your loyalty up to the 5,000 soft cap first, then use missions to push past it.**
 
-Loyalty is normally hard-capped on the way up by diminishing returns at the 5,000 soft cap — natural loyalty-building (governors, infrastructure, time) hits a wall there. Mission rewards, however, are **flat additions** applied directly via SQL: the script just runs `loyalty = loyalty + N` with no cap check. That means a +250-loyalty mission landing on a colony already sitting at 5,000 pushes it to 5,250 — territory you can't reach by any other means.
+**5,000 is your base personal cap** — normal loyalty (the +5/turn auto-raise that runs whenever you spend a turn with Consumer Goods in stock; see [Income Types → Tax](../income-types.md#tax-housing)) climbs to it and stops. Loyalty-reward missions, however, **raise the cap itself**: as of **Patch 106** the personal cap is explicitly "5,000 base, with bonuses adding on for missions you've completed." A +250-loyalty mission lifts the ceiling to 5,250 — territory you can't reach by turn-grinding alone.
 
 The Act 2 tracks alone hand out **+50, +100, +150, +250** stackable loyalty grants. If you trigger those while every colony is parked at 5,000, you walk away with empire-wide loyalty well above the cap and the income gains that come with it.
 

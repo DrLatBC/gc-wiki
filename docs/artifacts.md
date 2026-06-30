@@ -112,8 +112,8 @@ The cap is **per-tier**, not per-artifact-type — your total Commons across all
 | Grand Producto | -30% Consumer Goods | Regalo, Major Alimento, Minor Alimento, Regalo, Major Alimento |
 | Grand Requerido | -30% Raw Material | Major Gordo, Persiana, Major Tierra, Major Cosecha, Major Barrera |
 | Grand Tierra | -25% Ore | Major Alimento, Major Tierra, Major Cosecha, Persiana, Major Gordo |
-| Major Gordo | +Planets on ALL Systems (100–2,000) | Regalo, Persiana, Minor Gordo, Major Afortunado, Big Time Capsule |
-| Planetary Core | +Planets on ALL Systems (200–2,500, avg ~1,200) | Bronze Dinero, Grand Alimenter, Grand Gente, Grand Cosecha, Grand Tierra |
+| Major Gordo | +Land/Planets on one colony — self: **any chosen colony**; enemy: their **outermost border colony**. **Cannot target Homeworlds** (Patch 106). | Big Time Capsule, Major Cosecha, Major Alimento, Major Afortunado, Big Time Capsule |
+| Planetary Core | +Planets on a colony (200–2,500, avg ~1,200) | **No fusion recipe (Patch 106)** — obtained via special means only |
 
 ### Unique
 
@@ -130,7 +130,7 @@ The cap is **per-tier**, not per-artifact-type — your total Commons across all
 | Major Tierra | -1,250 to 5,000 Ore | Minor Cosecha, Minor Tierra, Minor Tierra, Minor Cosecha, Minor Tierra |
 | Minor Afortunado | +20 Luck (Time-Based) | Minor Requerido, Major Suerte, Minor Suerte, Minor Gente, Minor Suerte |
 | Minor Estructura | -200 Assigned Infrastructure on ALL Systems | Minor Gente, Minor Requerido, Small Time Capsule, Minor Cosecha, Minor Alimento |
-| Minor Gordo | +Planets on ALL Systems (1–500, avg ~200) | Minor Cosecha, Minor Cosecha, Minor Tierra, Minor Alimento, Minor Gente |
+| Minor Gordo | +Land/Planets on one colony — self: any chosen colony; enemy: their outermost border colony (avg ~200) | Minor Cosecha, Minor Cosecha, Minor Tierra, Minor Alimento, Minor Gente |
 | Persiana | +10 Timewarp | Minor Requerido, Small Time Capsule, Minor Gente, Small Time Capsule, Minor Alimento |
 | Regalo | +1 to 10 of a Random Artifact | Minor Gordo, Garnet Dinero, Traicione, Minor Alimento, Minor Cosecha |
 
@@ -203,3 +203,27 @@ Increases the rate of finding artifacts while digging and improves Regalo succes
 
 ### Timewarp
 Applied via Persiana. Gives the target a small chance to "miss" when they attempt an attack — the attack fails and they must refresh the page to try again. The tactical use is applying Timewarp to your enemy's intended targets, creating a brief window to hit the enemy while they are stuck on a failed attack. Split-second timing, but enough to matter in active PvP.
+
+### Gordos & Planetary Fracture (Patch 106)
+
+Patch 106 ("Planetary Fracture") reworked how Minor and Major Gordos behave, after empires used them to artificially inflate land.
+
+**Targeting:**
+
+- **On yourself:** a Gordo can be applied to **any chosen colony** in your colony list (previously it affected all systems at once).
+- **On another empire:** a Gordo only affects their **outermost border colony** (the topmost in their list).
+- **Major Gordo can no longer be used on Homeworld colonies** (Minor Gordo still can).
+
+**Land threshold → planet conversion:** A Gordo now adds **land up to a threshold**; once that threshold is reached, further Gordo value adds **planets** to the colony instead. As a cluster accumulates planets it climbs cluster levels:
+
+- A smaller cluster that gains planets past its level's planet ceiling **converts up to the next cluster size** (e.g. a **C1 gordoed past the 25-planet threshold becomes a C2**).
+- **Maximum-level clusters (C3, C.4, C.5)** have a hard threshold at **roughly twice the cluster's base planet count** (so ~250 planets for a 125-planet C3, etc.).
+
+**New colony types introduced by the fracture system:**
+
+- **Cluster Base** — a regular single-planet colony that has been gordoed (the pre-C1 gordoed state).
+- **U-Class Colony Clusters** — gordoed U-class colonies, now available for **all** U-class types once gordoed past the threshold.
+
+Empires already over the threshold when the patch landed were contacted by the Galactic Council regarding their colony decisions.
+
+> See [Planet Types](planets.md#industry-modifiers) for the per-type modifiers (including the new Industry column added in the same patch).

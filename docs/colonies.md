@@ -62,6 +62,8 @@ Land is purely additive. A C3 made of 125 planets averaging 800 land each = 100,
 - **Solid C3:** ~100,000 land
 - **Large C3:** ~130,000 land (requires being very selective with planet rolls)
 
+> **Gordo path (Patch 106):** Clusters can also be grown with Minor/Major Gordos. A Gordo fills a colony's land up to a threshold, then adds planets; crossing a cluster's planet ceiling converts it up a level (a C1 gordoed past 25 planets becomes a C2). Max-level clusters cap at ~2× their base planet count. See [Artifacts → Gordos & Planetary Fracture](artifacts.md#gordos-planetary-fracture-patch-106).
+
 ### Viral & Collective Clustering
 
 Viral and Collective use infection/assimilation instead of standard clustering and use **4 planets per cluster** instead of 5.

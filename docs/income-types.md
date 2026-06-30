@@ -14,10 +14,10 @@ Tax income converts population into credits. Population is fed by Food (required
 
 **Formula:** `((Population / 2) + (Population × Loyalty / 5000)) × Race Tax Modifier × Turns`
 
-- Loyalty maxes at 5,000 and is raised at +5 loyalty per turn spent (free accounts capped at 3 turns per action)
+- Loyalty raises **automatically at +5 per turn used**, as long as you hold a supply of Consumer Goods (reworked in Patch 106 — the old turn-and-credit "reward loyalty" action is gone; see [Formulas → Loyalty (raising)](formulas.md#loyalty-raising))
 - The loyalty term equals the base population term at **2,500** loyalty — that's where tax income exactly doubles (`pop/2 + pop/2 = pop`)
-- At max **5,000** loyalty the loyalty term is twice the base term, so tax reaches `1.5 × pop` — **triple** the zero-loyalty income, not double
-- Guardians **cannot raise loyalty** — an intentional nerf since Tax is their only viable income path
+- At **5,000** loyalty the loyalty term is twice the base term, so tax reaches `1.5 × pop` — **triple** the zero-loyalty income. 5,000 is the *base* personal cap; loyalty-reward missions raise it higher, scaling income past 1.5 × pop
+- **Guardians can now raise loyalty** (Patch 106) — but only to a **2,500 base cap** (→ 3,000 after completing all of Act 1's loyalty missions), still the lowest in the game
 
 ## Commercial
 
@@ -48,10 +48,11 @@ Agriculture produces equal quantities of Food and Raw Materials. Food is the cen
 
 Industry consumes Raw Materials and produces Consumer Goods sold on the player market.
 
-**Formula (full production, requires `Raw Materials ≥ Industry × Turns`):**
-`Industry × ((Research × 0.1) + 1) × Race Industry Modifier × Turns`
+**Formula:**
+`Industry × ((Research × 0.1) + 1) × Race Industry Modifier × (Planet Industry Mod / 100) × Turns`
 
-- **Cost:** 1 Raw Material per industry building per turn
+- **Planet Industry modifier** added in Patch 106 — every colony type now carries an Industry modifier (e.g. Barren +50%, U.Large +75%, Gas −90%; full list on [Planet Types](planets.md#industry-modifiers))
+- **Cost (Patch 106):** Raw Materials consumed = **exactly 30% of the Consumer Goods produced** (`× 0.3`; 5M goods → 1.5M RM), replacing the old flat 1 RM per building per turn
 - If Raw Materials run out mid-cycle, output is based on what was available
 - Doubly market-dependent — must buy inputs (RM) and sell outputs (CG)
 
