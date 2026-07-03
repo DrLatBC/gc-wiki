@@ -16,7 +16,7 @@ Attacking costs **5 turns**. The real turn cost of combat is ship construction �
 | Fed war / Enslave | 2× up, ÷1.5 down |
 | Counter-attack | No range restriction |
 
-The punch-up ceiling widens to 3× for large empires (≥200M PR). Punch-down depends on the target's rank — top-5 targets can be hit down to ÷1.5, everyone else only to ÷1.3. Fed war and enslave attacks use a flat 2× up / ÷1.5 down, and counter-attacks have no range restriction.
+The punch-up ceiling widens to 3× for large empires (≥300M PR). Punch-down depends on the target's rank — top-5 targets can be hit down to ÷1.5, everyone else only to ÷1.3. Fed war and enslave attacks use a flat 2× up / ÷1.5 down, and counter-attacks have no range restriction.
 
 ### Battle Outcomes
 
