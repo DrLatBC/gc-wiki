@@ -10,7 +10,7 @@ Attacking costs **5 turns**. The real turn cost of combat is ship construction �
 
 | Situation | Range |
 |-----------|-------|
-| Punch up | Up to **2×** your PR (**3×** if your PR ≥ 200M) |
+| Punch up | Up to **2×** your PR (**3×** if your PR ≥ 300M) |
 | Punch down — target ranked 6th or lower | Down to your PR **÷ 1.3** |
 | Punch down — top-5-ranked target | Down to your PR **÷ 1.5** |
 | Fed war / Enslave | 2× up, ÷1.5 down |
