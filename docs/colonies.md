@@ -25,7 +25,7 @@ Most planet types are irrelevant to income and clustering. The exceptions:
 | **Barren** | Highest possible land mass. Most likely to push 1,000+ land. Primary clustering target. |
 | **Balanced** | Can reach 850–900 with a good roll. Acceptable clustering candidate. |
 | **U.Spazial** | Best planet for artifact digging. Seek out 2-land copies specifically. |
-| **U.Large** | 5,000–10,000+ land. Excellent for infrastructure but cannot be clustered. |
+| **U.Large** | 5,000–10,000+ land (~20k after explore + gordo). Raw infrastructure powerhouse and a top Tax colony once matured; cannot be clustered. |
 | **U.Fertile** | Very high food/agriculture output. Cannot be clustered. |
 | **U.Eden** | Bonus to population growth. Useful for Tax players. Cannot be clustered. |
 | **U.Rich** | High ore content but very low land. Generally not worth keeping. |

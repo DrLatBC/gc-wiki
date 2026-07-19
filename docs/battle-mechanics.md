@@ -109,6 +109,8 @@ Defense is asymmetrical — a hard counter (99% shield) is vastly more powerful 
 
 When a stack is fired upon, it may fire back **before** taking its normal turn. This return fire deals **50% of the ship's weapon value**, after stance modifiers are applied.
 
+> **Reading the log:** return fire shows up as the word **"engage."** When you see a stack *engage* in the battle log, it's firing back at 50% weapon value — it's the log's only cue that return fire happened.
+
 Return fire is governed by two flags per ship:
 
 | Flag | Effect |
@@ -128,6 +130,12 @@ Return fire rules apply identically to direct stack engagements and flanks.
 ## Flanking
 
 When one side has more stacks than the other, unpaired stacks **flank** — they fire at a random surviving enemy stack. Flanking follows all normal combat rules including return fire, ND, and NR.
+
+### Always send 10 stacks (dummies)
+
+Because unpaired enemy stacks flank — firing freely at your surviving stacks in **both** rounds — you **always send 10 stacks**, even when only a couple are your real attackers (e.g. a "2 spam"). Every slot you leave empty is a free flank: the enemy stack there is unpaired from round 1 and gets to fire at your fleet both rounds.
+
+To close those slots you pad the fleet with **dummies** — 1-ship throwaway stacks. A dummy pairs with an enemy stack in round 1 and soaks its fire; that stack can only flank in round 2, once the dummy is destroyed. So each dummy trades two rounds of free flanking for one. Dummies are cheap and expendable, so players keep a pile of them pre-built — see [Ships → Fill Fleet](ships.md#fill-fleet).
 
 ## Power Rating (PR)
 

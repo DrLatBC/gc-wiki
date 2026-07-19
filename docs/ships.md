@@ -130,3 +130,7 @@ Neutral ships are available to all races. Upkeep varies per race. Key neutral sh
 ## Starbases
 
 Starbases are defensive ships. Building starbases does **not** break Damage Protection, unlike offensive ships.
+
+## Fill Fleet
+
+"Fill fleet" bulk-builds a batch of **dummies** — cheap 1-ship stacks used to fill all 10 battle stacks (see [Battle Mechanics → Always send 10 stacks](battle-mechanics.md#always-send-10-stacks-dummies)). Rather than building them one at a time, it stocks them in a single action. High-PR players keep **20+** dummies pre-built so an intense fight doesn't cost ~10 turns refilling them mid-battle.

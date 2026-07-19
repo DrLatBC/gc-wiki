@@ -53,11 +53,13 @@ U-class planets are rare, special-purpose, and **cannot be clustered**. They are
 
 | Planet | Pop. growth | Agriculture | Mining | Industry | Land | Notes |
 |---|---|---|---|---|---|---|
-| **U.Eden** | +1,000% | −98% | No Support | +25% | 500–2,000 | Massive population growth — Tax player paradise |
+| **U.Eden** | +1,000% | −98% | No Support | +25% | 500–2,000 | Massive population growth — fills a Tax colony fast, but caps at low land vs U.Large |
 | **U.Fertile** | −50% | +175% | No Support | +25% | 500–2,000 | Best Agriculture planet in the game |
-| **U.Large** | −80% | No Support | No Support | +75% | 2,000–10,000 | Huge land for raw infrastructure capacity |
+| **U.Large** | −80% | No Support | No Support | +75% | 2,000–10,000 | Huge land (~20k practical after explore + gordo) — raw infrastructure powerhouse **and** a top-tier Tax colony once matured |
 | **U.Rich** | −90% | No Support | +150% | −90% | 11–28 | 10,000–350,000 ore — by far the richest deposit |
 | **U.Spazial** | −90% | No Support | No Support | −90% | 1–5 | Best digging planet for artifacts |
+
+> **U.Large & Tax:** the -80% pop-growth mod makes U.Large *look* poor for population, but that's a **temporary ramp cost, not a permanent penalty**. Pop cap is land→housing driven (`Max Pop = (10 + Housing Research) × Housing`), so U.Large's enormous land supports an enormous pop ceiling — growth is slow, but once the pop is there it's permanent and taxes forever. A matured U.Large is a top-tier Tax colony, with a *higher* ceiling than U.Eden (which ramps faster but caps at only 500–2,000 land).
 
 Viral and Collective **cannot use U-class planets for income** (infection/assimilation is required, which doesn't apply). They can still use U.Spazial for digging since digging does not require infection.
 
