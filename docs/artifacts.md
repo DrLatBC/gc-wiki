@@ -112,7 +112,7 @@ The cap is **per-tier**, not per-artifact-type — your total Commons across all
 | Grand Producto | -30% Consumer Goods | Regalo, Major Alimento, Minor Alimento, Regalo, Major Alimento |
 | Grand Requerido | -30% Raw Material | Major Gordo, Persiana, Major Tierra, Major Cosecha, Major Barrera |
 | Grand Tierra | -25% Ore | Major Alimento, Major Tierra, Major Cosecha, Persiana, Major Gordo |
-| Major Gordo | +Land/Planets on one colony — self: **any chosen colony**; enemy: their **outermost border colony**. **Cannot target Homeworlds** (Patch 106). | Big Time Capsule, Major Cosecha, Major Alimento, Major Afortunado, Big Time Capsule |
+| Major Gordo | +Land/Planets on one colony (60–100 land per use) — self: **any chosen colony**; enemy: their **outermost border colony**. **Cannot target Homeworlds** (Patch 106). | Big Time Capsule, Major Cosecha, Major Alimento, Major Afortunado, Big Time Capsule |
 | Planetary Core | +Planets on a colony (200–2,500, avg ~1,200) | **No fusion recipe (Patch 106)** — obtained via special means only |
 
 ### Unique
@@ -130,7 +130,7 @@ The cap is **per-tier**, not per-artifact-type — your total Commons across all
 | Major Tierra | -1,250 to 5,000 Ore | Minor Cosecha, Minor Tierra, Minor Tierra, Minor Cosecha, Minor Tierra |
 | Minor Afortunado | +20 Luck (Time-Based) | Minor Requerido, Major Suerte, Minor Suerte, Minor Gente, Minor Suerte |
 | Minor Estructura | -200 Assigned Infrastructure on ALL Systems | Minor Gente, Minor Requerido, Small Time Capsule, Minor Cosecha, Minor Alimento |
-| Minor Gordo | +Land/Planets on one colony — self: any chosen colony; enemy: their outermost border colony (avg ~200) | Minor Cosecha, Minor Cosecha, Minor Tierra, Minor Alimento, Minor Gente |
+| Minor Gordo | +Land/Planets on one colony (20–40 land per use) — self: any chosen colony; enemy: their outermost border colony | Minor Cosecha, Minor Cosecha, Minor Tierra, Minor Alimento, Minor Gente |
 | Persiana | +10 Timewarp | Minor Requerido, Small Time Capsule, Minor Gente, Small Time Capsule, Minor Alimento |
 | Regalo | +1 to 10 of a Random Artifact | Minor Gordo, Garnet Dinero, Traicione, Minor Alimento, Minor Cosecha |
 
@@ -207,6 +207,8 @@ Applied via Persiana. Gives the target a small chance to "miss" when they attemp
 ### Gordos & Planetary Fracture (Patch 106)
 
 Patch 106 ("Planetary Fracture") reworked how Minor and Major Gordos behave, after empires used them to artificially inflate land.
+
+> **Use Minors, not Majors, for land.** Pound for pound, Minor Gordos are far more land-efficient. A Minor self-applies for 20–40 land; a Major only 60–100 — but building a Major burns a large fusion tree (~11 Minors' worth of components). Those ~11 Minors applied directly (~220–440 land) grow far more than the single Major. Only fuse up to a Major when you specifically need one large application rather than many small ones.
 
 **Targeting:**
 
