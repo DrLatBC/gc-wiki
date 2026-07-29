@@ -131,6 +131,8 @@ Return fire rules apply identically to direct stack engagements and flanks.
 
 When one side has more stacks than the other, unpaired stacks **flank** — they fire at a random surviving enemy stack. Flanking follows all normal combat rules including return fire, ND, and NR.
 
+> **Flank targeting is the only randomness in combat.** Damage, kills, and firing order are all deterministic — but an unpaired stack fires at a *random* surviving enemy stack. That's why simulating the same two fleets many times yields a win *rate* (e.g. 456/1,000) rather than one fixed result.
+
 ### Always send 10 stacks (dummies)
 
 Because unpaired enemy stacks flank — firing freely at your surviving stacks in **both** rounds — you **always send 10 stacks**, even when only a couple are your real attackers (e.g. a "2 spam"). Every slot you leave empty is a free flank: the enemy stack there is unpaired from round 1 and gets to fire at your fleet both rounds.
