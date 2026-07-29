@@ -139,6 +139,24 @@ Because unpaired enemy stacks flank — firing freely at your surviving stacks i
 
 To close those slots you pad the fleet with **dummies** — 1-ship throwaway stacks. A dummy pairs with an enemy stack in round 1 and soaks its fire; that stack can only flank in round 2, once the dummy is destroyed. So each dummy trades two rounds of free flanking for one. Dummies are cheap and expendable, so players keep a pile of them pre-built — see [Ships → Fill Fleet](ships.md#fill-fleet).
 
+## Fleet Composition (Rock-Paper-Scissors)
+
+Separate from ship matchups, **how you divide your fleet's PR across your 10 stacks** is its own strategic layer — and the three broad approaches form a rock-paper-scissors cycle.
+
+| Archetype | Setup |
+|---|---|
+| **Single spam** | 1 huge stack + 9 dummies |
+| **2/3/4 spam** | 2–4 large stacks + dummies to fill 10 |
+| **Stacks** | 10 real stacks, PR spread across all of them |
+
+**Single spam beats 2/3/4 spam.** With all your PR in one stack, the battle collapses into a couple of lopsided 1v1s — your stack wins its round 1 pairing on an enormous PR advantage, then wins another pairing in round 2. Meanwhile your surviving dummies soak the flanks from the enemy's spare stacks, so the giant stack itself is barely touched.
+
+**2/3/4 spam beats stacks.** Each of your big stacks wins its pairing against a much smaller one and comes out near-full — at an even 100M fleet PR, that's 33M stacks fighting 10M stacks. Dummies deny flanks in round 1, and in round 2 your big stacks simply line up against more small stacks. The spread fleet never generates enough flank fire to meaningfully hurt you.
+
+**Stacks beat single spam.** You feed your top 1–2 stacks to the giant stack while your remaining real stacks clear its dummies. In round 2 your ~8 survivors are all unpaired — and they *all* flank the single stack at once, which buries it.
+
+> **These are matchup odds, not laws.** A bad matchup is more like 70/30 or 80/20 than 100/0 — stacks *can* beat a 4 spam. Treat it like drawing a bad matchup in a card game: weapon/shield pairings, range, and ship quality still decide the individual exchanges.
+
 ## Power Rating (PR)
 
 PR determines stack order and attack range. It has **no direct impact on combat outcome**. A ship with 50 PR and a ship with 500 PR are equally effective if their hull/weapon ratios are proportional — the lower PR ship simply builds in larger quantities for the same turn cost.

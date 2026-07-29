@@ -31,20 +31,22 @@ mkdocs gh-deploy
 | Resources | Complete |
 | Income Types | Complete |
 | Colonies | Complete |
+| Exploration | Complete |
+| Planet Types | Complete |
+| Formulas | Complete |
 | Races | Complete |
 | Artifacts | Complete (dig times need verification) |
-| Ships | Stub — needs formatting |
-| Battle Mechanics | Incomplete — needs dedicated session |
+| Ships | Complete — stats deferred to Vigi's live shiplist |
+| Battle Mechanics | Complete |
+| Missions | Complete (Terran, Aspha Miner, Guardian) |
 | Federations | Complete |
-| Index | Stub |
+| Index | Complete |
 
 ## Known gaps
 
-- Combat depth: weapon types, shield interactions, stack tactics
-- Missions: not yet documented
+- Combat depth: specific ship matchups and per-race counter picks (weapon/shield interaction, stack mechanics, and composition R/P/S are now covered)
 - Dig times: verify Malaysian server time windows with devs
-- Ship list: CSV imported but needs per-race formatting
-- PR system: partial, needs expansion
+- Ship stats: deferred to Vigi's live shiplist by design — not duplicated here
 
 ## Source notes
 

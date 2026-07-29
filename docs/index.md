@@ -39,7 +39,7 @@ Galactic Conquest is a slow-paced, spreadsheet-style 4X-adjacent MMO. Mastery is
 The following topics are documented elsewhere or pending further research:
 
 - **Ship stats** — Full live ship stats: [Vigi's GC Shiplist](https://docs.google.com/spreadsheets/d/13_0zDPWB9EX1YwlMKWCjfOeG9KYjIC8uHS6Z1B8kVAg/edit?gid=1753353631#gid=1753353631)
-- **Combat depth** — Ship matchups, fleet composition meta, and stacking strategy are not covered here. This is a deep topic best learned through play and community discussion.
+- **Combat depth** — Fleet composition is now covered at a structural level ([Battle Mechanics → Fleet Composition](battle-mechanics.md#fleet-composition-rock-paper-scissors)), but specific ship matchups and per-race counter picks are not. That layer is best learned through play and community discussion.
 - **Slave mechanic** — Disabled, pending rework. Not documented.
 
 ## Abbreviations
