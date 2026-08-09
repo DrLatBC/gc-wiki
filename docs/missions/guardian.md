@@ -1,6 +1,6 @@
 # Guardian Missions
 
-The Guardian mission track is the post-civil-war rebuilding arc. It grants Kal-Zul Destroyer K-Class ships (type 77) and includes a one-time **per-Gas-planet credit windfall** that scales with how many Gas-class planets you already own when the mission completes.
+The Guardian mission track is the post-civil-war rebuilding arc. It grants Kal-Zul Destroyer K-Class ships and includes a one-time **per-Gas-planet credit windfall** that scales with how many Gas-class planets you already own when the mission completes.
 
 See the [Missions overview](index.md) for general mechanics. See [Guardian on the Races page](../races.md#guardian) for race mechanics.
 
@@ -17,10 +17,10 @@ See the [Missions overview](index.md) for general mechanics. See [Guardian on th
 | 5 | Churning Out Credits | Income +5,000 credits/turn | +500,000 credits |
 | 6 | Gas Mining Corporation | Control 1× Gas-class planet | **+500,000 credits × every Gas-class planet you own at completion** |
 | 7 | Increasing Your Defenses | 100,000 PR | 1 new colony |
-| 8 | Kal-Zul Ships | 25,000,000 credit reserves | **−25,000,000 credits.** +5 Kal-Zul Destroyer K-Class ships (type 77) |
+| 8 | Kal-Zul Ships | 25,000,000 credit reserves | **−25,000,000 credits.** +5 Kal-Zul Destroyer K-Class ships |
 | 9 | Answers | Control 2× oceanic-class planets | +10 Kal-Zul Destroyer K-Class ships; advance to Act 2 |
 
-> **The gifted Kal-Zul ships cannot be built.** The 15 K.Hun-Li the track awards (type 77) are the alien originals, so they can never be replaced once lost. Guardian's *buildable* K.Hun-Li is a separate reverse-engineered ship, and it is the stronger of the two.
+> The Kal-Zul ships these missions award are gift ships — they cannot be built, so any you lose are gone for good. Guardian's *buildable* K.Hun-Li is a separate, stronger reverse-engineered ship.
 
 > Stack Gas-class planets before completing Mission 6 — the reward scales linearly with your Gas count. Owning 5 Gas planets at completion yields 2.5M credits; owning 10 yields 5M. The check fires once at completion, so additional Gas planets acquired after don't retroactively add credits.
 

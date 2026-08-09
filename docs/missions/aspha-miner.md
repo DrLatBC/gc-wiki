@@ -1,6 +1,6 @@
 # Aspha Miner Missions
 
-The Aspha mission track is the only one that grants a **race-unique ship type** — the alien **G.Livid** (ship type 44). Rewards otherwise center on loyalty, free colonies, and the lore-thematic Asphalt Temple / Arch / Great Asphalt Arch buildings.
+The Aspha mission track is the only one that grants a **race-unique ship type** — the alien **G.Livid**. Rewards otherwise center on loyalty, free colonies, and the lore-thematic Asphalt Temple / Arch / Great Asphalt Arch buildings.
 
 See the [Missions overview](index.md) for general mechanics. See [Aspha Miner on the Races page](../races.md#aspha-miner) for race mechanics.
 
@@ -15,7 +15,7 @@ See the [Missions overview](index.md) for general mechanics. See [Aspha Miner on
 | 3 | Exploration | Control 4 planets | +20 loyalty cap |
 | 4 | Constructing the Asphalt Temple | 500,000 credit reserves | **−500,000 credits.** +5 levels Mining Infrastructure Tech |
 | 5 | Standing Up | 15,000 PR | +20 loyalty cap |
-| 6 | Constructing the Asphalt Arch | 8,000,000 credit reserves | **−8,000,000 credits.** G.Livid **set to** 2 (type 44) |
+| 6 | Constructing the Asphalt Arch | 8,000,000 credit reserves | **−8,000,000 credits.** G.Livid **set to** 2 |
 | 7 | Research | 1× level-20 infrastructure tech | 2 new colonies |
 | 8 | The Great Asphalt Arch | 40,000,000 credit reserves | **−40,000,000 credits.** +15 G.Livid |
 | 9 | Construction Material | Control 2× oceanic-class planets | Advance to Act 2 |
@@ -38,11 +38,7 @@ See the [Missions overview](index.md) for general mechanics. See [Aspha Miner on
 
 > The in-game files for Act 2 missions 3 and 4 are swapped in their header labels (m_3 says "Mission 5", m_4 says "Mission 3"). Mission order in play follows file order, so the table above is correct.
 
-## Class-G ships
-
-The mission track awards **27 G.Livid** in total — 2 at Act 1 m_6, 15 at m_8, and 10 at Act 2 m_1. They are gift ships: **G.Livid cannot be built**, so those 27 are all you will ever have, and any you lose are gone for good.
-
-They are strong for their power rating — heavy hull, long reach, and they return fire — which makes them a real boost through the mid game. But 27 hulls is a small number in a mature fleet, so treat them as a bonus rather than a fleet to plan around, and avoid spending them on fights you don't need to take.
+> The G.Livid these missions award are gift ships — they cannot be built, so the 27 the track grants are all you will ever have.
 
 ## Notes
 
