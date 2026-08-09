@@ -123,7 +123,7 @@ This only works when the innermost 5 colonies of the relevant tier are *all* jun
 
 ## Defensive Considerations
 
-Fresh discoveries land at the top of the colony list — the outermost, most-attackable position. An attacker can take the outermost 3 colonies in a single hit (see [Colonies & Clustering](colonies.md#colony-list--defense)).
+Fresh discoveries land at the top of the colony list — the outermost, most-attackable position. An attacker can take the outermost 3 colonies in a single hit (see [Colonies & Clustering](colonies.md#colony-list-defense)).
 
 The bury rule: **always keep ≥3 junk planets above any cluster**. If a fresh keeper or a freshly-formed cluster ends up at positions 0–2, immediately explore enough junk discoveries to push it back under cover. C2s and C3s especially must never sit in the outermost 3 — they represent dozens of underlying planets each.
 

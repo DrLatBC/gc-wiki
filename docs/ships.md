@@ -112,7 +112,7 @@ upkeep = base × (weapon + armor) × race_upkeep_mod
 - `race_upkeep_mod` scales the whole result — cheapest to priciest: **Guardian `0.8` < Marauder `1.9` < Collective `3.3` < Viral `7` < Terran `8` < Aspha Miner `10.1`** (per 1,000,000). This is why the same neutral ship costs a Guardian a fraction of what it costs an Aspha.
 - A handful of ships are hardcoded to **0 upkeep**.
 
-See [Formulas → Ship Upkeep](formulas.md#maintenance--upkeep) for the same formula in the economy context. The takeaway for play: idle scout fleets bleed credits every turn for zero benefit — **disband them when you're done exploring**.
+See [Formulas → Ship Upkeep](formulas.md#ship-upkeep) for the same formula in the economy context. The takeaway for play: idle scout fleets bleed credits every turn for zero benefit — **disband them when you're done exploring**.
 
 ### Mineral Costs
 
