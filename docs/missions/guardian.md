@@ -11,14 +11,16 @@ See the [Missions overview](index.md) for general mechanics. See [Guardian on th
 | # | Mission | Goal | Reward |
 |---|---|---|---|
 | 1 | Rebuilding Your Home Base | Income +500 credits/turn | +5,000 ore |
-| 2 | Housing Upgrade | Level 20 Housing Infrastructure Tech | +200 loyalty |
-| 3 | Exploration | Control 5 planets | +200 loyalty |
-| 4 | Enlarging Your Home Base | Control 1× Cluster Level 1 | +200 loyalty |
+| 2 | Housing Upgrade | Level 20 Housing Infrastructure Tech | +200 loyalty cap |
+| 3 | Exploration | Control 5 planets | +200 loyalty cap |
+| 4 | Enlarging Your Home Base | Control 1× Cluster Level 1 | +200 loyalty cap |
 | 5 | Churning Out Credits | Income +5,000 credits/turn | +500,000 credits |
 | 6 | Gas Mining Corporation | Control 1× Gas-class planet | **+500,000 credits × every Gas-class planet you own at completion** |
 | 7 | Increasing Your Defenses | 100,000 PR | 1 new colony |
 | 8 | Kal-Zul Ships | 25,000,000 credit reserves | **−25,000,000 credits.** +5 Kal-Zul Destroyer K-Class ships (type 77) |
 | 9 | Answers | Control 2× oceanic-class planets | +10 Kal-Zul Destroyer K-Class ships; advance to Act 2 |
+
+> **The gifted Kal-Zul ships cannot be built.** The 15 K.Hun-Li the track awards (type 77) are the alien originals, so they can never be replaced once lost. Guardian's *buildable* K.Hun-Li is a separate reverse-engineered ship, and it is the stronger of the two.
 
 > Stack Gas-class planets before completing Mission 6 — the reward scales linearly with your Gas count. Owning 5 Gas planets at completion yields 2.5M credits; owning 10 yields 5M. The check fires once at completion, so additional Gas planets acquired after don't retroactively add credits.
 
@@ -27,13 +29,13 @@ See the [Missions overview](index.md) for general mechanics. See [Guardian on th
 | # | Mission | Goal | Reward |
 |---|---|---|---|
 | 1 | The Shipyard | 50,000,000 credit reserves | *Reward script disabled — message says "PM an Administrator to get access to your new ship". Manual fulfilment by admin.* |
-| 2 | Military Build-Up | More than 200,000 PR | +100 loyalty |
-| 3 | Natural Resource Required | Control 1× Ice-class planet | +200 loyalty |
+| 2 | Military Build-Up | More than 200,000 PR | +100 loyalty cap |
+| 3 | Natural Resource Required | Control 1× Ice-class planet | +200 loyalty cap |
 | 4 | The Temptation | Control 80 planets | 3 new colonies |
-| 5 | Beginning of the Warlike Guardian | Control 2× Marshy-class planets | +150 loyalty |
+| 5 | Beginning of the Warlike Guardian | Control 2× Marshy-class planets | +150 loyalty cap |
 | 6 | From Peace to War | Control 100 planets | 2 new colonies |
 | 7 | Constructing the Guardian Obelisk | 200,000,000 credit reserves | **−200,000,000 credits.** 2 new colonies |
-| 8 | Super Power | Control 200 planets | +250 loyalty |
+| 8 | Super Power | Control 200 planets | +250 loyalty cap |
 | 9 | Final Mission | Control 300 planets | **Infrastructure research cost cut to 1/10**. Temporary — discount fades after roughly the next ~5 research levels |
 
 ## Notes

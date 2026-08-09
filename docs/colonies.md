@@ -25,7 +25,7 @@ Most planet types are irrelevant to income and clustering. The exceptions:
 | **Barren** | Highest possible land mass. Most likely to push 1,000+ land. Primary clustering target. |
 | **Balanced** | Can reach 850–900 with a good roll. Acceptable clustering candidate. |
 | **U.Spazial** | Best planet for artifact digging. Seek out 2-land copies specifically. |
-| **U.Large** | 5,000–10,000+ land (~20k after explore + gordo). Raw infrastructure powerhouse and a top Tax colony once matured; cannot be clustered. |
+| **U.Large** | 5,000–10,000+ land (single-planet Major Gordo cap: 21,495 — caps rise with planet count). Raw infrastructure powerhouse and a top Tax colony once matured; cannot be clustered. |
 | **U.Fertile** | Very high food/agriculture output. Cannot be clustered. |
 | **U.Eden** | Bonus to population growth. Useful for Tax players. Cannot be clustered. |
 | **U.Rich** | High ore content but very low land. Generally not worth keeping. |
@@ -62,7 +62,7 @@ Land is purely additive. A C3 made of 125 planets averaging 800 land each = 100,
 - **Solid C3:** ~100,000 land
 - **Large C3:** ~130,000 land (requires being very selective with planet rolls)
 
-> **Gordo path (Patch 106):** Clusters can also be grown with Minor/Major Gordos. A Gordo fills a colony's land up to a threshold, then adds planets; crossing a cluster's planet ceiling converts it up a level (a C1 gordoed past 25 planets becomes a C2). Max-level clusters cap at ~2× their base planet count. See [Artifacts → Gordos & Planetary Fracture](artifacts.md#gordos-planetary-fracture-patch-106).
+> **Gordo path (Patch 106):** Clusters can also be grown with Minor/Major Gordos. A Gordo fills a colony's land up to a threshold, then adds planets; crossing a cluster's planet ceiling converts it up a level (a C1 gordoed past 25 planets becomes a C2). Max-level clusters cap at ~2× their base planet count, and land itself caps per colony type (a Fertile cluster maxes at 40,000 land via Minors, 67,625 via Majors). See [Artifacts → Gordos & Planetary Fracture](artifacts.md#gordos-planetary-fracture-patch-106).
 
 ### Viral & Collective Clustering
 

@@ -10,10 +10,10 @@ See the [Missions overview](index.md) for general mechanics. See [Terran on the 
 
 | # | Mission | Goal | Reward |
 |---|---|---|---|
-| 1 | A Self Sustainable Empire | Income +500 credits/turn | +20 loyalty all colonies |
-| 2 | Commercial Upgrade | Level 5 Commercial Infrastructure Tech | +20 loyalty |
-| 3 | Exploration | Control 4 planets | +20 loyalty |
-| 4 | Coming Out of Protection | 10,000 PR | +20 loyalty |
+| 1 | A Self Sustainable Empire | Income +500 credits/turn | +20 loyalty cap |
+| 2 | Commercial Upgrade | Level 5 Commercial Infrastructure Tech | +20 loyalty cap |
+| 3 | Exploration | Control 4 planets | +20 loyalty cap |
+| 4 | Coming Out of Protection | 10,000 PR | +20 loyalty cap |
 | 5 | Government Control Center | 5,000,000 credit reserves | **−5,000,000 credits.** +2 levels Housing Infrastructure Tech |
 | 6 | More Planets | Control 15 planets | 2 new colonies |
 | 7 | Research | 1× level-20 infrastructure tech | 3 new colonies |
@@ -25,13 +25,13 @@ See the [Missions overview](index.md) for general mechanics. See [Terran on the 
 | # | Mission | Goal | Reward |
 |---|---|---|---|
 | 1 | Financial Crisis | 50,000,000 credit reserves | **−50,000,000 credits.** +2 levels Housing Tech, +2 levels Commercial Tech |
-| 2 | Resources | Control more than 50 planets | +50 loyalty |
-| 3 | Military Build-Up | More than 200,000 PR | +20 loyalty |
-| 4 | Military Build-Up | More than 300,000 PR | +100 loyalty |
-| 5 | Alien Artifact Finding | Control 2× oceanic-class planets | +150 loyalty *(intended artifact tech reward is disabled in current game data)* |
+| 2 | Resources | Control more than 50 planets | +50 loyalty cap |
+| 3 | Military Build-Up | More than 200,000 PR | +20 loyalty cap |
+| 4 | Military Build-Up | More than 300,000 PR | +100 loyalty cap |
+| 5 | Alien Artifact Finding | Control 2× oceanic-class planets | +150 loyalty cap |
 | 6 | Expansion of the Empire | Control 80 planets | 2 new colonies |
 | 7 | Stronghold | More than 800,000 PR | 3 new colonies |
-| 8 | Top of the Galaxy | Control 200 planets | +250 loyalty |
+| 8 | Top of the Galaxy | Control 200 planets | +250 loyalty cap |
 | 9 | Final Mission | Control 300 planets | **Infrastructure research cost cut to 1/10** (`resstart` and `resreq` divided by 10). Temporary — discount fades after roughly the next ~10 research levels |
 
 ## Notes

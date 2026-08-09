@@ -208,7 +208,7 @@ Applied via Persiana. Gives the target a small chance to "miss" when they attemp
 
 Patch 106 ("Planetary Fracture") reworked how Minor and Major Gordos behave, after empires used them to artificially inflate land.
 
-> **Use Minors, not Majors, for land.** Pound for pound, Minor Gordos are far more land-efficient. A Minor self-applies for 20–40 land; a Major only 60–100 — but building a Major burns a large fusion tree (~11 Minors' worth of components). Those ~11 Minors applied directly (~220–440 land) grow far more than the single Major. Only fuse up to a Major when you specifically need one large application rather than many small ones.
+> **Use Minors, not Majors, for land.** Pound for pound, Minor Gordos are far more land-efficient. A Minor self-applies for 20–40 land; a Major only 60–100 — but building a Major burns a large fusion tree (~11 Minors' worth of components). Those ~11 Minors applied directly (~220–440 land) grow far more than the single Major. Only fuse up to a Major when you specifically need one large application rather than many small ones — or when a colony has hit the Minor land cap (see below) and only a Major can still grow it.
 
 **Targeting:**
 
@@ -220,6 +220,18 @@ Patch 106 ("Planetary Fracture") reworked how Minor and Major Gordos behave, aft
 
 - A smaller cluster that gains planets past its level's planet ceiling **converts up to the next cluster size** (e.g. a **C1 gordoed past the 25-planet threshold becomes a C2**).
 - **Maximum-level clusters (C3, C.4, C.5)** have a hard threshold at **roughly twice the cluster's base planet count** (so ~250 planets for a 125-planet C3, etc.).
+
+**Land caps (live-tested):** A colony's land can't be gordoed forever — past a cap, the artifact refuses to fire with the message **"Colony too large to gordo!"**. Two things set the cap: the **Gordo tier** (Majors cap higher than Minors, making them the only way to grow past the Minor cutoff) and the colony's **planet count** — a colony still at 1 planet caps far lower than the same type grown into a multi-planet cluster, so a single-planet cap is *not* the type's overall max. Publicly confirmed values so far (**?** = not yet publicly confirmed):
+
+| U-class | 1-planet cap (Minor) | 1-planet cap (Major) | Max cap (Minor) | Max cap (Major) |
+|---------|----------------------|----------------------|-----------------|-----------------|
+| **U.Eden** | ? | ? | ? | ? |
+| **U.Fertile** | ? | ? | 40,000 | 67,625 |
+| **U.Large** | ? | 21,495 | ? | ? |
+| **U.Rich** | ? | ? | ? | ? |
+| **U.Spazial** | ? | 21,495 | ? | ? |
+
+A maxed Fertile holds **50 planets**. Standard (non-U) cluster caps are also not yet publicly confirmed.
 
 **New colony types introduced by the fracture system:**
 

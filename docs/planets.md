@@ -55,7 +55,7 @@ U-class planets are rare, special-purpose, and **cannot be clustered**. They are
 |---|---|---|---|---|---|---|
 | **U.Eden** | +1,000% | −98% | No Support | +25% | 500–2,000 | Massive population growth — fills a Tax colony fast, but caps at low land vs U.Large |
 | **U.Fertile** | −50% | +175% | No Support | +25% | 500–2,000 | Best Agriculture planet in the game |
-| **U.Large** | −80% | No Support | No Support | +75% | 2,000–10,000 | Huge land (~20k practical after explore + gordo) — raw infrastructure powerhouse **and** a top-tier Tax colony once matured |
+| **U.Large** | −80% | No Support | No Support | +75% | 2,000–10,000 | Huge land (Major Gordo cap at 1 planet: **21,495** — caps rise with planet count) — raw infrastructure powerhouse **and** a top-tier Tax colony once matured |
 | **U.Rich** | −90% | No Support | +150% | −90% | 11–28 | 10,000–350,000 ore — by far the richest deposit |
 | **U.Spazial** | −90% | No Support | No Support | −90% | 1–5 | Best digging planet for artifacts |
 

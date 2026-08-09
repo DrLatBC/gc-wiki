@@ -15,36 +15,38 @@ Only **three races** have a mission track. The remaining races can be played nor
 
 ## Recommended strategy
 
-**Max your loyalty up to the 5,000 soft cap first, then use missions to push past it.**
+**Claim loyalty missions as soon as you qualify — the reward is a permanent cap increase, not a one-time top-up.**
 
-**5,000 is your base personal cap** — normal loyalty (the +5/turn auto-raise that runs whenever you spend a turn with Consumer Goods in stock; see [Income Types → Tax](../income-types.md#tax-housing)) climbs to it and stops. Loyalty-reward missions, however, **raise the cap itself**: as of **Patch 106** the personal cap is explicitly "5,000 base, with bonuses adding on for missions you've completed." A +250-loyalty mission lifts the ceiling to 5,250 — territory you can't reach by turn-grinding alone.
+**5,000 is your base personal loyalty cap.** Normal loyalty (the +5/turn auto-raise that runs whenever you spend a turn with Consumer Goods in stock; see [Income Types → Tax](../income-types.md#tax-housing)) climbs to that ceiling and stops. Loyalty-reward missions **raise the ceiling itself**: as of **Patch 106** the personal cap is "5,000 base, with bonuses adding on for missions you've completed," so a +250-loyalty mission lifts your cap to 5,250 and leaves it there. The Act 2 tracks alone hand out **+50, +100, +150, +250**, and they stack.
 
-The Act 2 tracks alone hand out **+50, +100, +150, +250** stackable loyalty grants. If you trigger those while every colony is parked at 5,000, you walk away with empire-wide loyalty well above the cap and the income gains that come with it.
+This replaced the older behaviour, where completing a mission dumped a one-time lump of loyalty onto the colonies you happened to own at that moment. The practical consequences are the reverse of what that used to imply:
+
+- **You cannot waste a loyalty reward by claiming it early.** Your current loyalty is irrelevant to the reward — the extra ceiling is banked permanently, and colonies climb into it afterwards at +5/turn.
+- **Earlier is strictly better.** The cap raise is permanent but the growth toward it is per-turn, so claiming sooner gives your colonies longer to fill the new headroom.
 
 Practical playthrough order:
 
-1. **Grind every colony up to the 5,000 soft cap first** — through governors, infrastructure, and time — before triggering any high-loyalty mission completion.
-2. **Save the big loyalty missions for last.** The +100, +150, +250 grants in Act 2 are worth the most when they land on already-maxed colonies. Triggering them with low underlying loyalty wastes the headroom.
+1. **Complete loyalty missions the moment you meet their goals.** There is no reason to hold one back.
+2. **Keep Consumer Goods in stock.** A raised cap only pays off while the +5/turn auto-raise is actually running underneath it.
 3. Time the credit-burning "building" missions (see costs below) for when your reserves are well above the threshold — completing them with exactly the threshold leaves your treasury at zero.
 
 ## Structure
 
 Every race's track follows the same two-act format:
 
-- **Act 1 — Foundations.** Mostly economic and exploration milestones (income/turn, planet count, infrastructure tech, first power-rating thresholds). Rewards are mostly loyalty boosts, small credit/ore grants, and free colonies.
-- **Act 2 — Empire.** Larger goals (50–200 planets, 200K–800K PR, specific planet types). Rewards scale up with bigger loyalty grants, multiple free colonies, and unique race-specific ship grants or build unlocks. Each track's final mission grants the same temporary perk: **infrastructure research cost cut to 1/10**, lasting roughly the next ~5 research levels before the natural cost curve catches back up.
+- **Act 1 — Foundations.** Mostly economic and exploration milestones (income/turn, planet count, infrastructure tech, first power-rating thresholds). Rewards are mostly loyalty-cap raises, small credit/ore grants, and free colonies.
+- **Act 2 — Empire.** Larger goals (50–200 planets, 200K–800K PR, specific planet types). Rewards scale up with bigger loyalty-cap raises, multiple free colonies, and unique race-specific ship grants. Each track's final mission grants the same temporary perk: **infrastructure research cost cut to 1/10**, lasting roughly the next ~5 research levels before the natural cost curve catches back up.
 
 ## Reward types
 
 | Reward | Effect |
 |---|---|
-| Loyalty | Flat loyalty added to every colony you own (+20 → +250 depending on mission tier) |
+| Loyalty | **Permanent increase to your personal loyalty cap** (+20 → +250 depending on mission tier), stacking on top of the 5,000 base — not a one-time top-up of current loyalty |
 | Credits | One-shot credit grant |
 | Ore | One-shot ore grant (Guardian Act 1 m_1 only) |
 | Free colonies | Auto-triggers exploration successes — 1 to 3 new planets joining your empire |
 | Infra tech levels | +2 or +5 levels to a specific infrastructure technology, equivalent to skipping that much research |
-| Ship grants | Free units of a race-unique ship (Guardian's Kal-Zul Destroyer K-Class, Aspha's alien class-G ships) |
-| Build unlock | Ability to construct a race-unique ship type from then on (Aspha Act 2 m_1) |
+| Ship grants | Free units of a race-unique ship (Guardian's Kal-Zul Destroyer K-Class, Aspha's alien G.Livid). These gift ships **cannot be built** — what the missions award is all you ever get |
 | Research-cost reduction | Final mission only — `resstart` and `resreq` divided by 10. Temporary buff: roughly the next ~5 research levels are heavily discounted before normal cost growth restores parity |
 
 ## Costs
@@ -67,5 +69,5 @@ Notable cost-burning missions:
 ## Race tracks
 
 - [Terran Missions](terran.md) — Commercial / Industry / Agriculture empire builder. No ship rewards; pure economy & colony progression.
-- [Aspha Miner Missions](aspha-miner.md) — Industry / Mining / Tax. Grants alien class-G ships and unlocks the ability to build them in Act 2.
+- [Aspha Miner Missions](aspha-miner.md) — Industry / Mining / Tax. Grants 27 alien G.Livid across the track.
 - [Guardian Missions](guardian.md) — Housing-driven energy empire. Grants Kal-Zul Destroyer K-Class ships and includes a one-off Gas-planet credit windfall.
