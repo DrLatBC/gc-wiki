@@ -14,9 +14,9 @@ You feed the loop until you've turned ~50 underlying planets into clusters (typi
 
 ## Scouts
 
-Most races have a Scout-class ship. You need a fleet of them to explore — total fleet **Scanning power** drives how fast a single discovery completes. The Explore page reports `Turns required to finish exploration with your current fleet` based on this.
+Most races have a Scout-class ship. What actually drives exploration is your total fleet **Scanning power** — it determines how fast a single discovery completes, whether that scanning comes from dedicated scouts or from regular ships. The Explore page reports `Turns required to finish exploration with your current fleet` based on this.
 
-> **Marauder and Collective have no scouts and cannot explore.** They grow exclusively through combat — Marauder by raiding and taking colonies, Collective by assimilating them. Race choice locks you into the corresponding growth path; if you want a cluster build off explored keepers, you have to play one of the other races.
+> **Marauder and Collective have no Scout-class ship — but they can still explore.** Their scanning power comes from regular combat ships, which carry scanner values like anything else in the fleet. The catch is [Damage Protection](battle-mechanics.md#damage-protection-dp): scouts don't break DP, but offensive ships do. So these two races effectively explore **out of DP** — the only way to explore while under DP is to already hold the scanner ships when the DP period begins.
 
 The strategic target is **`turns_required = 1`** — one discovery per turn allocated. As your empire grows the per-discovery difficulty climbs and `turns_required` creeps up; that's the signal to buy more scouts.
 

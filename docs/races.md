@@ -37,9 +37,9 @@ All economic modifiers are stored as percentages added to a 1.0× baseline. Conv
 | Terran | Easy | 15 | Yes | [Yes](missions/terran.md) |
 | Aspha Miner | Easy | 12 | Yes | [Yes](missions/aspha-miner.md) |
 | Guardian | Hard | 10 | Yes | [Yes](missions/guardian.md) |
-| Marauder | Medium | 12 | No | No |
+| Marauder | Medium | 12 | Yes (no scouts) | No |
 | Viral | Hard | 12 | Yes | No |
-| Collective | Hard | 13 | No | No |
+| Collective | Hard | 13 | Yes (no scouts) | No |
 
 ## Terran
 
@@ -68,7 +68,7 @@ All economic modifiers are stored as percentages added to a 1.0× baseline. Conv
 ## Marauder
 
 - **Viable income:** Agriculture, Industry
-- **Cannot explore** — all land must be acquired through combat against NPCs or other players
+- **No Scout-class ship** — explores using the scanner values on regular combat ships, so exploring generally happens outside Damage Protection (see [Exploration](exploration.md#scouts))
 - Standard clustering (C1/C2/C3)
 - Can die if all planets are lost
 - D-class ships cannot be reverse engineered by Viral
@@ -90,7 +90,7 @@ All economic modifiers are stored as percentages added to a 1.0× baseline. Conv
 - Can die if all planets are lost
 - Uses **assimilation** instead of standard clustering
 - Cluster sizes use 4 planets per level (Similare C1–C5) — the only race with C5 (256 planets)
-- **Cannot explore** — all land must be acquired through combat against NPCs or other players
+- **No Scout-class ship** — explores using the scanner values on regular combat ships, so exploring generally happens outside Damage Protection (see [Exploration](exploration.md#scouts))
 - Can assimilate clusters taken from other races
 - Cannot use U-class planets for income, but can dig on U.Spazial
-- NPC farming is a viable and indefinite land source, making Collective's aggression requirement manageable even at low player counts
+- NPC farming is a viable and indefinite land source, so Collective can keep growing through combat even at low player counts

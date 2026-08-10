@@ -36,7 +36,7 @@ U-class planets cannot be clustered but are kept for their unique bonuses. Viral
 
 ## Exploring
 
-Players start by exploring to build up their planet count. Exploration requires Scouts — expensive ships that improve scanning power.
+Players start by exploring to build up their planet count. Exploration runs on fleet scanning power — most races get it from Scouts (expensive ships built for the purpose), while Marauder and Collective have no scouts and scan with regular combat ships instead.
 
 - Players can explore approximately **55–60 planets** before exploration becomes impractical
 - Bad planets should be destroyed (via plunder) and replaced with better rolls
@@ -81,6 +81,29 @@ Collective is the only race with access to C5, allowing for massive land totals.
 Viral and Collective can also infect/assimilate clusters taken from other races. These retain their original planet count (5, 25, or 125) and can be further clustered with matching infected/assimilated clusters.
 
 > **Note:** Unassign Agriculture and Industry infrastructure before infecting a cluster — these cannot be unassigned after infection.
+
+## Clusters vs U-Class: Spending Your Colony Slots
+
+Every race has a hard colony cap (10–15 slots), and **each slot holds either one U-class planet or an entire cluster**. That single fact drives most build decisions.
+
+| One colony slot spent on… | Holds | Typical land |
+|---|---|---|
+| A U.Large | 1 planet | ~15,000–20,000 |
+| A C3 | 125 planets | ~100,000 |
+
+Land is additive across a cluster, so per slot a C3 is worth roughly **five U.Larges**. If your goal is maximum land, clusters are the answer and it isn't close — **C3s are the backbone of any large empire.**
+
+That doesn't make U-class planets junk. They cannot be clustered, but they carry type bonuses no cluster can match — U.Fertile's +175% agriculture, U.Large's +75% industry and enormous population ceiling, U.Spazial's artifact digging. You keep them for what they *do*, not for their land. Since [Planetary Fracture](artifacts.md#gordos-planetary-fracture-patch-106) they can also be gordoed into U-Class Colony Clusters, which grow while **keeping** their base type bonuses.
+
+The practical shape most established empires land on:
+
+```
+C3 / C3 / U.Spazial / U.Large / U.Large
+```
+
+Clusters as the land engine, one U.Spazial for digging, and a couple of special-purpose U-class colonies alongside — agriculture races often run U.Fertiles in place of the U.Larges. The trap to avoid is filling a tight colony list with U-class planets: they get you land quickly early on, but they cap out, and every slot they occupy is a C3 you never built.
+
+> For the explore-phase version of this decision — which discoveries to keep and which to plunder — see [Exploration → Classification](exploration.md#classification).
 
 ## Colony List & Defense
 
