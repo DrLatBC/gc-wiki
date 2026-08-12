@@ -8,7 +8,9 @@ A colony is a group of planets under a single entry in your empire list. Each ra
 
 Planets have a land value that determines how useful they are for infrastructure and clustering. Land is the only stat that matters for clustering — planet type is irrelevant.
 
-### Land Ranges
+### Land Ranges (Explore Rolls)
+
+These are the values a planet can *arrive* with from exploring — not the land it can ultimately hold. Gordos grow a colony far past any of them; see [Artifacts → Land caps](artifacts.md#gordos-planetary-fracture-patch-106).
 
 - **Floor:** 1 land
 - **Ceiling:** ~1,500 land (requires an extremely rare "S-class" roll on top of an already high roll — never plan around this)
@@ -59,8 +61,12 @@ Clusters are groups of colonies merged into a single, larger colony entry. Clust
 
 Land is purely additive. A C3 made of 125 planets averaging 800 land each = 100,000 land exactly.
 
+Built from explored planets alone:
+
 - **Solid C3:** ~100,000 land
 - **Large C3:** ~130,000 land (requires being very selective with planet rolls)
+
+These are exploration results, not ceilings — gordos grow a cluster well past them.
 
 > **Gordo path (Patch 106):** Clusters can also be grown with Minor/Major Gordos. A Gordo fills a colony's land up to a threshold, then adds planets; crossing a cluster's planet ceiling converts it up a level (a C1 gordoed past 25 planets becomes a C2). Max-level clusters cap at ~2× their base planet count, and land itself caps per colony type (a Fertile cluster maxes at 40,000 land via Minors, 67,625 via Majors). See [Artifacts → Gordos & Planetary Fracture](artifacts.md#gordos-planetary-fracture-patch-106).
 
@@ -86,12 +92,16 @@ Viral and Collective can also infect/assimilate clusters taken from other races.
 
 Every race has a hard colony cap (10–15 slots), and **each slot holds either one U-class planet or an entire cluster**. That single fact drives most build decisions.
 
-| One colony slot spent on… | Holds | Typical land |
+From exploration alone the gap is stark, because a cluster stacks the land of every planet inside it while a U-class colony is a single planet:
+
+| One colony slot spent on… | Holds | Land from exploring |
 |---|---|---|
-| A U.Large | 1 planet | ~15,000–20,000 |
+| A U.Large | 1 planet | ~15,000 |
 | A C3 | 125 planets | ~100,000 |
 
-Land is additive across a cluster, so per slot a C3 is worth roughly **five U.Larges**. If your goal is maximum land, clusters are the answer and it isn't close — **C3s are the backbone of any large empire.**
+If your goal is maximum land, clusters are the answer — **C3s are the backbone of any large empire.**
+
+Gordos narrow that gap considerably, because both sides grow: a C3 can be gordoed toward ~250 planets, while a U-class colony becomes a U-Class Colony Cluster with its own multi-planet land cap (a maxed U.Fertile reaches 67,625 land across 50 planets). Neither ceiling is fully mapped yet — see [Artifacts → Land caps](artifacts.md#gordos-planetary-fracture-patch-106) for the confirmed values.
 
 That doesn't make U-class planets junk. They cannot be clustered, but they carry type bonuses no cluster can match — U.Fertile's +175% agriculture, U.Large's +75% industry and enormous population ceiling, U.Spazial's artifact digging. You keep them for what they *do*, not for their land. Since [Planetary Fracture](artifacts.md#gordos-planetary-fracture-patch-106) they can also be gordoed into U-Class Colony Clusters, which grow while **keeping** their base type bonuses.
 

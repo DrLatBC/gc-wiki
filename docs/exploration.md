@@ -86,7 +86,7 @@ spaz   = U.Spazial AND you don't already hold one
 junk   = everything else
 ```
 
-The 1050 threshold reflects the practical floor for a 100k+ land C3 (125 keepers × 800+ land each, with headroom). Higher thresholds (1200+) yield bigger clusters but slow exploration significantly.
+The 1050 threshold reflects the practical floor for a 100k+ land C3 built from explored keepers (125 × 800+ land each, with headroom). Higher thresholds (1200+) yield bigger clusters but slow exploration significantly.
 
 ### Why U-Class Is Junk for Clustering
 
@@ -95,6 +95,8 @@ U-class planets cannot be clustered. Each U.Large, U.Eden, U.Fertile, or U.Rich 
 The exception is **U.Spazial**: keep exactly one for artifact digging (see [Artifacts & Digging](artifacts.md)). Plunder any further U.Spazials you roll.
 
 Players who specialize in non-cluster income paths (a U.Eden tax build, a U.Fertile food economy) value U-class planets differently — but for the standard cluster-and-bury strategy, they're junk.
+
+> This is **explore-phase** guidance. Once you have gordos in hand, a U-class colony can be grown into a U-Class Colony Cluster and the calculation changes — see [Colonies → Clusters vs U-Class](colonies.md#clusters-vs-u-class-spending-your-colony-slots).
 
 ## The Soft Cap
 
