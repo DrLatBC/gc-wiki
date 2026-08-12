@@ -68,7 +68,7 @@ Built from explored planets alone:
 
 These are exploration results, not ceilings — gordos grow a cluster well past them.
 
-> **Gordo path (Patch 106):** Clusters can also be grown with Minor/Major Gordos. A Gordo fills a colony's land up to a threshold, then adds planets; crossing a cluster's planet ceiling converts it up a level (a C1 gordoed past 25 planets becomes a C2). Max-level clusters cap at ~2× their base planet count, and land itself caps per colony type (a Fertile cluster maxes at 40,000 land via Minors, 67,625 via Majors). See [Artifacts → Gordos & Planetary Fracture](artifacts.md#gordos-planetary-fracture-patch-106).
+> **Gordo path (Patch 106):** Clusters can also be grown with Minor/Major Gordos. A Gordo fills a colony's land up to a threshold, then adds planets; crossing a cluster's planet ceiling converts it up a level (a C1 gordoed past 25 planets becomes a C2). Max-level clusters cap at ~2× their base planet count, and land itself caps per colony type (a maxed C3 tops out at **375,000 land**; a Fertile cluster maxes at 40,000 via Minors, 67,625 via Majors). See [Artifacts → Gordos & Planetary Fracture](artifacts.md#gordos-planetary-fracture-patch-106).
 
 ### Viral & Collective Clustering
 
@@ -101,7 +101,7 @@ From exploration alone the gap is stark, because a cluster stacks the land of ev
 
 If your goal is maximum land, clusters are the answer — **C3s are the backbone of any large empire.**
 
-Gordos narrow that gap considerably, because both sides grow: a C3 can be gordoed toward ~250 planets, while a U-class colony becomes a U-Class Colony Cluster with its own multi-planet land cap (a maxed U.Fertile reaches 67,625 land across 50 planets). Neither ceiling is fully mapped yet — see [Artifacts → Land caps](artifacts.md#gordos-planetary-fracture-patch-106) for the confirmed values.
+Gordos grow both sides, so the gap narrows a little but doesn't close. Fully gordoed, a C3 reaches **375,000 land** (~250 planets), while the best-documented U-class ceiling is a maxed **U.Fertile at 67,625 land** across 50 planets. Clusters stay far ahead at every stage. Most U-class caps are still unconfirmed — see [Artifacts → Land caps](artifacts.md#gordos-planetary-fracture-patch-106) for what's known.
 
 That doesn't make U-class planets junk. They cannot be clustered, but they carry type bonuses no cluster can match — U.Fertile's +175% agriculture, U.Large's +75% industry and enormous population ceiling, U.Spazial's artifact digging. You keep them for what they *do*, not for their land. Since [Planetary Fracture](artifacts.md#gordos-planetary-fracture-patch-106) they can also be gordoed into U-Class Colony Clusters, which grow while **keeping** their base type bonuses.
 
