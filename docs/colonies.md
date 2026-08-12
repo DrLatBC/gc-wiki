@@ -30,7 +30,7 @@ Most planet types are irrelevant to income and clustering. The exceptions:
 | **U.Eden** | Bonus to population growth. Useful for Tax players. Cannot be clustered. |
 | **U.Rich** | High ore content but very low land. Generally not worth keeping. |
 
-U-class planets cannot be clustered but are kept for their unique bonuses. Viral and Collective cannot use U-class planets for income (infection/assimilation is required) but can use U.Spazial for digging since digging does not require infection.
+U-class planets cannot be clustered but are kept for their unique bonuses. Viral and Collective cannot use the base U-class planets for income (infection/assimilation is required) — they have their own **T.** and **A.** prefixed variants instead (see [Planet Types](planets.md#viral--collective-u-class-variants)). Both races can use U.Spazial for digging regardless, since digging does not require infection.
 
 > Full numeric reference for all 30+ planet types — including population growth, agriculture, and mining modifiers, plus cluster-type modifiers — lives on the [Planet Types](planets.md) page.
 

@@ -46,6 +46,7 @@ mkdocs gh-deploy
 
 - Combat depth: specific ship matchups and per-race counter picks (weapon/shield interaction, stack mechanics, and composition R/P/S are now covered)
 - Dig times: verify Malaysian server time windows with devs
+- T./A. U-class variants: gordo land/planet thresholds not yet documented
 - Ship stats: deferred to Vigi's live shiplist by design — not duplicated here
 
 ## Source notes

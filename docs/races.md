@@ -80,7 +80,7 @@ All economic modifiers are stored as percentages added to a 1.0× baseline. Conv
 - Uses **infection** instead of standard clustering
 - Cluster sizes use 4 planets per level instead of 5 (Tainted C1–C4)
 - Can also infect clusters taken from other races, retaining their original planet count
-- Cannot use U-class planets for income (infection required), but can dig on U.Spazial
+- Uses **T.** (Tainted) U-class variants for income rather than the base U-class planets — see [Planet Types](planets.md#viral--collective-u-class-variants). Can dig on U.Spazial regardless
 - **Reverse engineering:** Viral selects 3 ships from the Marauder, Terran, and Aspha Miner shiplists to add to its own. This selection can be changed approximately weekly. P-class, D-class, and G-class ships are excluded from selection
 - Viral's native shiplist is weak — flexibility via reverse engineering is their core identity and the tradeoff for their lower income ceiling
 
@@ -92,5 +92,5 @@ All economic modifiers are stored as percentages added to a 1.0× baseline. Conv
 - Cluster sizes use 4 planets per level (Similare C1–C5) — the only race with C5 (256 planets)
 - **No Scout-class ship** — explores using the scanner values on regular combat ships, so exploring generally happens outside Damage Protection (see [Exploration](exploration.md#scouts))
 - Can assimilate clusters taken from other races
-- Cannot use U-class planets for income, but can dig on U.Spazial
+- Uses **A.** (Assimilated) U-class variants for income rather than the base U-class planets — see [Planet Types](planets.md#viral--collective-u-class-variants). Can dig on U.Spazial regardless
 - NPC farming is a viable and indefinite land source, so Collective can keep growing through combat even at low player counts

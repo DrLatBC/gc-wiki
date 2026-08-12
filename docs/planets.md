@@ -61,7 +61,38 @@ U-class planets are rare, special-purpose, and **cannot be clustered**. They are
 
 > **U.Large & Tax:** the -80% pop-growth mod makes U.Large *look* poor for population, but that's a **temporary ramp cost, not a permanent penalty**. Pop cap is land→housing driven (`Max Pop = (10 + Housing Research) × Housing`), so U.Large's enormous land supports an enormous pop ceiling — growth is slow, but once the pop is there it's permanent and taxes forever. A matured U.Large is a top-tier Tax colony, with a *higher* ceiling than U.Eden (which ramps faster but caps at only 500–2,000 land).
 
-Viral and Collective **cannot use U-class planets for income** (infection/assimilation is required, which doesn't apply). They can still use U.Spazial for digging since digging does not require infection.
+The base U-class planets above **cannot be used for income by Viral or Collective** — infection/assimilation is required and doesn't apply to them. Both races instead have their own U-class variants (below). Digging on U.Spazial works regardless, since it does not require infection.
+
+### Viral & Collective U-Class Variants
+
+Viral and Collective each get their own set of U-class planets, using the same colony prefixes as their captured clusters: **T.** (Tainted) for Viral and **A.** (Assimilated) for Collective. These give both races access to U-class income that base U-class planets don't provide.
+
+You get one by **infecting or assimilating a U-class planet you already hold**, acquired the same way any race acquires U-class planets. Land is rolled *before* infection under the normal explore rules, so the land ranges in the base U-class table above still apply. Like base U-class colonies they **cannot be clustered**, but they **can be gordoed** (exact thresholds not yet documented), and T./A.Spazial digs exactly like U.Spazial.
+
+**Tainted (Viral):**
+
+| Planet | Pop. growth | Agriculture | Mining | Industry |
+|---|---|---|---|---|
+| **T.Eden** | +250% | −60% | No Support | +10% |
+| **T.Fertile** | −40% | +90% | No Support | +10% |
+| **T.Large** | −60% | No Support | No Support | +40% |
+| **T.Rich** | −60% | No Support | +80% | −60% |
+| **T.Spazial** | −65% | No Support | No Support | −65% |
+
+**Assimilated (Collective):**
+
+| Planet | Pop. growth | Agriculture | Mining | Industry |
+|---|---|---|---|---|
+| **A.Eden** | +350% | −65% | No Support | +15% |
+| **A.Fertile** | −35% | +115% | No Support | +15% |
+| **A.Large** | −55% | No Support | No Support | +55% |
+| **A.Rich** | −55% | No Support | +105% | −55% |
+| **A.Spazial** | −70% | No Support | No Support | −70% |
+
+Two patterns worth noting:
+
+- **Weaker headline stat, gentler penalties.** Each variant trades away much of the base type's signature bonus (U.Fertile's +175% agriculture becomes +90% / +115%; U.Eden's +1,000% pop becomes +250% / +350%) but carries far less severe downsides — T.Eden's −60% agriculture against U.Eden's −98%, T.Rich's −60% industry against U.Rich's −90%.
+- **Assimilated beats Tainted across the board.** Every A. variant is modestly stronger than its T. counterpart.
 
 ## Cluster Planet Types
 
