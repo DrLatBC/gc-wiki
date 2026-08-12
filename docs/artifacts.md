@@ -231,7 +231,7 @@ Patch 106 ("Planetary Fracture") reworked how Minor and Major Gordos behave, aft
 | **U.Rich** | ? | ? | ? | ? |
 | **U.Spazial** | ? | 21,495 | ? | ? |
 
-A maxed Fertile holds **50 planets**. For standard clusters, a **maxed C3 caps at 375,000 land**; the lower cluster tiers are not yet publicly confirmed.
+A maxed Fertile holds **50 planets**. For standard clusters, a **maxed C3 caps at 375,000 land**; the lower tiers aren't confirmed, though a 50-planet C2 has been observed holding 73,000.
 
 **New colony types introduced by the fracture system:**
 
