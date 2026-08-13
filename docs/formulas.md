@@ -109,7 +109,7 @@ commercial_research ≥ 5  AND  commercial ≥ 5  AND  agriculture ≥ 1
     AND  race ≠ Marauder  AND  race ≠ Collective
 ```
 
-> Marauder and Collective are **excluded** from this synergy bonus in the source (`race ≠ 2 AND race ≠ 4`), even if they otherwise meet the conditions.
+> Marauder and Collective are **excluded** from this synergy bonus even if they otherwise meet the conditions.
 
 ```
 bonus_food = floor(
@@ -386,7 +386,7 @@ upkeep = base × (weapon + armor) × race_upkeep_mod
 
 Then adjusted by combat traits: ÷1.5 if the ship has no return-fire and no long-range, ×1.5 for long-range (and starbases get an extra ×1.2). The race upkeep modifier scales the whole thing (Guardian cheapest at `0.8/1,000,000`, A.Miner priciest at `10.1/1,000,000`; Terran `8`, Viral `7`, Collective `3.3`, Marauder `1.9`).
 
-See [Ships](ships.md) for the per-ship breakdown and how this drives "disband idle scouts" advice. *(A handful of ships are hardcoded to 0 upkeep.)*
+See [Ships](ships.md) for the per-ship breakdown and how this drives "disband idle scouts" advice. *(A handful of ships have no upkeep at all.)*
 
 ### Total Deduction
 
