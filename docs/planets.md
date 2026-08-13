@@ -12,7 +12,7 @@ Each planet type has fixed modifiers for population growth, agriculture, and min
 | **Agriculture** | `planet_agriculture_mod` (food + raw material output, %) |
 | **Mining** | `planet_mining_mod` (ore + mineral output, %) |
 | **Industry** | `planet_industry_mod` (consumer-goods output, %) — **added in Patch 106** |
-| **Land** | Base land roll range — drives infrastructure capacity. Explore inflates this by 1.2625×–1.50× (see [Exploration](exploration.md#the-explore-land-mod)) |
+| **Land** | Base land roll range — drives infrastructure capacity. Exploring adds 25–50% on top (see [Exploration](exploration.md#why-land-beats-the-listed-ranges)) |
 | **Ore** | Initial ore deposit roll range — caps lifetime ore production |
 | **No Support** | That income type cannot be produced on this planet |
 
@@ -45,7 +45,7 @@ These are the planets you'll encounter while exploring. All can be clustered **e
 
 > **Note on Dead:** Dead is a rare roll (it comes from the same uncommon roll table as the U-class planets, not the normal explore pool) and **cannot be clustered, infected, or assimilated**. With 1–5 land it's pure junk — plunder it. It's listed here only for completeness.
 
-> **Land values shown are base rolls.** The Explore action applies a `1.25 × (1 + randrange(1,20)/100)` multiplier on top, so post-explore land is 1.2625×–1.50× the listed ceiling. A Barren rolling 935 base can hit 1,402 useable land in practice. See [Exploration](exploration.md#the-explore-land-mod).
+> **Land values shown are base rolls.** Exploring adds 25–50% on top, so a Barren with a 935 base ceiling can reach about 1,400 useable land in practice. See [Exploration](exploration.md#why-land-beats-the-listed-ranges).
 
 ## U-Class Planets
 

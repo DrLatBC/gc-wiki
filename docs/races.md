@@ -68,7 +68,7 @@ All economic modifiers are stored as percentages added to a 1.0× baseline. Conv
 ## Marauder
 
 - **Viable income:** Agriculture, Industry
-- **No Scout-class ship** — explores using the scanner values on regular combat ships, so exploring generally happens outside Damage Protection (see [Exploration](exploration.md#scouts))
+- **No Scout-class ship** — explores using the scanner values on regular combat ships, so exploring generally happens outside Damage Protection (see [Exploration](exploration.md#scanning-power))
 - Standard clustering (C1/C2/C3)
 - Can die if all planets are lost
 - D-class ships cannot be reverse engineered by Viral
@@ -90,7 +90,7 @@ All economic modifiers are stored as percentages added to a 1.0× baseline. Conv
 - Can die if all planets are lost
 - Uses **assimilation** instead of standard clustering
 - Cluster sizes use 4 planets per level (Similare C1–C5) — the only race with C5 (256 planets)
-- **No Scout-class ship** — explores using the scanner values on regular combat ships, so exploring generally happens outside Damage Protection (see [Exploration](exploration.md#scouts))
+- **No Scout-class ship** — explores using the scanner values on regular combat ships, so exploring generally happens outside Damage Protection (see [Exploration](exploration.md#scanning-power))
 - Can assimilate clusters taken from other races
 - Uses **A.** (Assimilated) U-class variants for income rather than the base U-class planets — see [Planet Types](planets.md#viral--collective-u-class-variants). Can dig on U.Spazial regardless
 - NPC farming is a viable and indefinite land source, so Collective can keep growing through combat even at low player counts

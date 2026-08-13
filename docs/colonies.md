@@ -113,7 +113,7 @@ C3 / C3 / U.Spazial / U.Large / U.Large
 
 Clusters as the land engine, one U.Spazial for digging, and a couple of special-purpose U-class colonies alongside — agriculture races often run U.Fertiles in place of the U.Larges. The trap to avoid is filling a tight colony list with U-class planets: they get you land quickly early on, but they cap out, and every slot they occupy is a C3 you never built.
 
-> For the explore-phase version of this decision — which discoveries to keep and which to plunder — see [Exploration → Classification](exploration.md#classification).
+> For the explore-phase version of this decision — which discoveries to keep and which to plunder — see [Exploration → Which Planets to Keep](exploration.md#which-planets-to-keep).
 
 ## Colony List & Defense
 

@@ -6,43 +6,47 @@ Exploration is how you grow your colony list before you start fighting for it. E
 
 ## The Loop
 
-```
-[scouts] → [explore] → [classify] → [plunder junk] → [cluster keepers] → repeat
-```
+Exploration is a cycle you repeat until your colony list is built:
 
-You feed the loop until you've turned ~50 underlying planets into clusters (typically two C2s, ten C1s, or a single C3 if you go that far) buried under a border of junk. After that, exploration is largely done.
+1. **Build scanning power** so discoveries come in fast.
+2. **Explore** to find a planet.
+3. **Judge it** — is it worth a colony slot?
+4. **Plunder the junk** to free the slot again.
+5. **Cluster the keepers** once you have five of them.
 
-## Scouts
+You run this until roughly 50 underlying planets have been folded into clusters — typically two C2s, ten C1s, or a single C3 if you go that far — all buried under a border of junk. After that, exploration is largely done.
 
-Most races have a Scout-class ship. What actually drives exploration is your total fleet **Scanning power** — it determines how fast a single discovery completes, whether that scanning comes from dedicated scouts or from regular ships. The Explore page reports `Turns required to finish exploration with your current fleet` based on this.
+## Scanning Power
+
+Exploration runs on your fleet's **scanning power**. Most races build dedicated **Scouts** for this; the Explore page shows how many turns your next discovery will take with the fleet you currently have.
+
+**You want that number at 1** — one turn per discovery. As your empire grows each discovery gets harder and that number creeps upward. When it does, build more scouts to bring it back down.
 
 > **Marauder and Collective have no Scout-class ship — but they can still explore.** Their scanning power comes from regular combat ships, which carry scanner values like anything else in the fleet. The catch is [Damage Protection](battle-mechanics.md#damage-protection-dp): scouts don't break DP, but offensive ships do. So these two races effectively explore **out of DP** — the only way to explore while under DP is to already hold the scanner ships when the DP period begins.
 
-The strategic target is **`turns_required = 1`** — one discovery per turn allocated. As your empire grows the per-discovery difficulty climbs and `turns_required` creeps up; that's the signal to buy more scouts.
-
-Scout fleets have no combat value (a pure-scout fleet auto-loses any battle), so they exist only to enable exploration. **Disband them once you're done exploring** — upkeep on a parked scout fleet bleeds credits indefinitely.
+Scouts have no combat value — a fleet of nothing but scouts loses any battle automatically. They exist purely to enable exploration, so **disband them once you're done exploring**. A parked scout fleet bleeds upkeep every turn for no benefit.
 
 ## The Explore Action
 
-One submission of the Explore form, with `turns_required` turns allocated, yields **one discovery**. Each discovery lands at the **top of the colony list** (the outermost, most-exposed position).
+One Explore attempt yields **one discovery**, and each new colony lands at the **top of your colony list** — the outermost, most exposed position.
 
-### Costs
+### What It Costs
 
-The Explore action itself **deducts no credits** — its direct cost is **turns**. What scales with empire size is the *scanning requirement* per discovery:
+Exploring deducts **no credits**. Its direct cost is **turns**.
 
-```
-explore_requirement = 5000 × 1.2 ^ (planet_count - 1)
-```
-
-This is the exploration-points needed for the next discovery (source: `res_researchstart = 5000`, `res_researchincrease = 1.2`, i.e. compounding +20% difficulty). It drives the **turn** cost via your fleet's scanning power:
+What makes it expensive over time is that every planet you already own raises the bar for the next one. The scanning points your next discovery requires:
 
 ```
-turns_required = ceil((explore_requirement − current_explore_points) / fleet_scanning_power)
+scan required = 5,000 × 1.2 ^ (planets owned − 1)
 ```
 
-As the empire grows the requirement compounds, so each discovery needs more scan points → more turns, unless you add scouts. The strategic target is `turns_required = 1`; buy more scouts to hold it there.
+That's a compounding **+20% per planet**. Your fleet's scanning power is what pays it off, and the turn cost is simply how long that takes:
 
-**Credits do enter indirectly** — exploring requires a scout fleet, and scouts cost credits to build and carry ongoing upkeep. So "exploring is free" is only true per-attempt; the scanning power that keeps `turns_required` low is paid for in ships.
+```
+turns = (scan required − scan already banked) ÷ fleet scanning power    [rounded up]
+```
+
+So as the requirement compounds, each discovery eats more turns unless you keep adding scouts. "Exploring is free" is only true per attempt — the real cost is the scout fleet, in credits to build and upkeep to hold.
 
 ### What You Find
 
@@ -56,81 +60,75 @@ The result page reports:
 | Available ore | Initial ore deposit |
 | Mineral produced | The ship-mineral type this planet's mining yields |
 
-## The Explore Land Mod
+## Why Land Beats the Listed Ranges
 
-The land value rolled by Explore is **not** simply the base land range listed on [Planet Types](planets.md). Explore first rolls a **uniform random value across the planet type's full range**, then applies multipliers on top:
-
-```
-useable_land = floor( round( randrange(land_min, land_max) × 1.25 ) × (1 + randrange(1, 20) / 100) )
-```
-
-So each roll starts somewhere in `[land_min, land_max]` (not at the max), then gets a flat **×1.25**, then a uniform **0.01–0.20** bonus (the `randrange(1,20)/100` term). The bonus multiplier is universal because every account has premium. Net effect: any given roll is `1.2625× – 1.50×` of *whatever* base value was rolled — so the *best possible* roll is `land_max × 1.50`, but a typical roll is much lower.
-
-**Example (maximum possible).** A Barren with a base land ceiling of 935 can roll at most:
+The land you actually get is better than the base ranges on [Planet Types](planets.md). Exploring rolls a value somewhere inside the type's range — **not** at the top of it — then multiplies it:
 
 ```
-935 × 1.25 × 1.20 = 1,402.5 useable land
+useable land = base roll × 1.25 × (1.01 to 1.20)
 ```
 
-A typical Barren rolls well below this, since the base is random across its range. This multiplier applies to every planet type, U-classes included — a U.Large with a 10,000 base ceiling can reach ~15,000 at the top end. (There is also a rare "special" multiplier that can push a roll *above* the 1.50× ceiling — the "S-class" mega-roll referenced on [Colonies](colonies.md).)
+A flat 25% bonus, plus a random 1–20% on top. So any roll lands at **1.2625× to 1.50×** whatever base value came up, and every account gets this.
 
-> All land ranges on [Planet Types](planets.md) are **base values**. Add 25–50% on top to see what's actually possible from an Explore.
+A great planet therefore needs two things to go right: a high roll inside the range, *and* a high bonus on top. A Barren whose base range tops out at 935 can reach roughly **1,400 useable land** at the absolute maximum, but a typical Barren lands well below that.
 
-## Classification
+This applies to every planet type — a U.Large can reach around 15,000. Rarely, a "special" roll pushes a planet past even the normal bonus ceiling; that's the **S-class** mega-roll mentioned on [Colonies](colonies.md).
 
-A keeper is a planet worth a colony slot. Everything else gets plundered.
+> All land ranges on [Planet Types](planets.md) are **base values**. Add 25–50% to see what an Explore can actually produce.
 
-```
-keep   = clusterable type AND useable_land ≥ 1050
-spaz   = U.Spazial AND you don't already hold one
-junk   = everything else
-```
+## Which Planets to Keep
 
-The 1050 threshold reflects the practical floor for a 100k+ land C3 built from explored keepers (125 × 800+ land each, with headroom). Higher thresholds (1200+) yield bigger clusters but slow exploration significantly.
+A keeper is a planet worth spending a colony slot on. Everything else gets plundered.
+
+- **Keep** any clusterable planet with roughly **1,050+ useable land**.
+- **Keep exactly one U.Spazial** for artifact digging.
+- **Plunder everything else.**
+
+That ~1,050 floor is what a 100k+ land C3 needs when built from explored keepers — 125 planets averaging 800+ land each, with room to spare. Holding out for 1,200+ builds bigger clusters but slows exploration considerably.
 
 ### Why U-Class Is Junk for Clustering
 
-U-class planets cannot be clustered. Each U.Large, U.Eden, U.Fertile, or U.Rich consumes a full colony slot for a single planet — the same slot that could hold a C2 (25 underlying planets) or C3 (125). Even a 15k-land U.Large is a slot waste against the cluster strategy.
+U-class planets cannot be clustered. Each U.Large, U.Eden, U.Fertile, or U.Rich eats a full colony slot for a single planet — the same slot that could hold a C2 (25 underlying planets) or a C3 (125). Even a 15,000-land U.Large is a poor trade against the cluster strategy.
 
-The exception is **U.Spazial**: keep exactly one for artifact digging (see [Artifacts & Digging](artifacts.md)). Plunder any further U.Spazials you roll.
+The exception is **U.Spazial**: keep exactly one for artifact digging (see [Artifacts & Digging](artifacts.md)). Plunder any others you roll.
 
-Players who specialize in non-cluster income paths (a U.Eden tax build, a U.Fertile food economy) value U-class planets differently — but for the standard cluster-and-bury strategy, they're junk.
+Players building non-cluster income paths — a U.Eden tax build, a U.Fertile food economy — value U-class planets differently. But for the standard cluster-and-bury strategy, they're junk.
 
 > This is **explore-phase** guidance. Once you have gordos in hand, a U-class colony can be grown into a U-Class Colony Cluster and the calculation changes — see [Colonies → Clusters vs U-Class](colonies.md#clusters-vs-u-class-spending-your-colony-slots).
 
 ## The Soft Cap
 
-Most empires plateau at **~55–60 underlying planets** of exploration before the per-discovery turn and credit costs make further exploring uneconomical. The typical "done" shape for a 15-slot race:
+Most empires plateau at **~55–60 underlying planets** before the turn cost per discovery makes further exploring uneconomical. The typical finished shape for a 15-slot race:
 
-- 2 × C2 (50 underlying planets across 2 slots)
-- ~13 × junk C0s as ablative armor
+- 2 × C2 — 50 underlying planets across two slots
+- ~13 junk colonies acting as ablative armor
 
-Past the soft cap, the only way to grow is to take colonies from other players in combat.
+Past that point, the only way to grow is to take colonies from other players in combat.
 
 ## Plunder for Slot Management
 
-Plunder is the only way to remove a colony from your list. Each plunder costs **5 turns** per colony, regardless of batch size, and gives nothing back — its purpose is freeing slots, not income.
+Plunder is the only way to remove a colony from your list. It costs **5 turns** per colony regardless of how many you batch, and returns nothing — its purpose is freeing slots, not income.
 
 Use it to:
 
 1. Discard junk discoveries that didn't clear the keeper threshold.
-2. Remove duplicate U-class planets (a second U.Spazial, any non-Spazial U-class on a cluster build).
-3. Shape the colony list for clustering — see [Colonies & Clustering](colonies.md#plundering) for the list-position mechanics.
+2. Remove duplicate U-class planets — a second U.Spazial, or any non-Spazial U-class on a cluster build.
+3. Shape your colony list for clustering — see [Colonies & Clustering](colonies.md#plundering) for the list-position mechanics.
 
 ### The Cluster-Plunder Shortcut
 
-Plundering 5 individual junk planets costs 25 turns. Clustering them into a single junk C1 first (0 turns) and then plundering the C1 (5 turns) frees the same 5 slots for **5 turns instead of 25**.
+Plundering five junk planets one at a time costs 25 turns. Clustering them into a single junk C1 first (which costs nothing) and plundering that C1 instead frees the same five slots for **5 turns rather than 25**.
 
-This only works when the innermost 5 colonies of the relevant tier are *all* junk — clustering takes the innermost 5, you can't choose which. See [Colonies & Clustering](colonies.md#clustering) for the cluster mechanic.
+This only works when the innermost five colonies of that tier are *all* junk — clustering always takes the innermost five and you can't pick which. See [Colonies & Clustering](colonies.md#clustering) for the cluster mechanic.
 
-## Defensive Considerations
+## Defending What You Find
 
-Fresh discoveries land at the top of the colony list — the outermost, most-attackable position. An attacker can take the outermost 3 colonies in a single hit (see [Colonies & Clustering](colonies.md#colony-list-defense)).
+Fresh discoveries arrive at the top of your colony list, which is the most attackable position. An attacker can take your outermost three colonies in a single hit (see [Colonies & Clustering](colonies.md#colony-list-defense)).
 
-The bury rule: **always keep ≥3 junk planets above any cluster**. If a fresh keeper or a freshly-formed cluster ends up at positions 0–2, immediately explore enough junk discoveries to push it back under cover. C2s and C3s especially must never sit in the outermost 3 — they represent dozens of underlying planets each.
+**The bury rule: always keep at least three junk planets above any cluster.** If a keeper or a newly formed cluster ends up in the outermost three, explore junk immediately to push it back under cover. C2s and C3s especially must never sit that exposed — each one represents dozens of underlying planets.
 
 ### The Post-Cluster Burst
 
-When you cluster the innermost 5 C0s of an empire whose other slots are all higher-tier clusters, the new C1 lands at the **outermost** position. The defense is to bank turns *before* clustering so you can immediately burst-explore 3+ junk discoveries on top of the new C1.
+When you cluster the innermost five plain colonies of an empire whose other slots are all higher-tier clusters, the new C1 appears at the **outermost** position — fully exposed the moment it forms.
 
-Rule of thumb: bank **4× the burst cost** in turns before initiating a cluster that will surface (so 12 turns at `turns_required = 1`, 24 turns at `turns_required = 2`).
+The defense is to bank turns *before* you cluster, so you can immediately explore three or more junk planets on top of it. Bank about **four times** what that burst will cost: roughly 12 turns when discoveries take 1 turn each, 24 when they take 2.
