@@ -197,9 +197,7 @@ Both sides at -50% efficiency. Favors high hull ships that are hard to kill. Rar
 ### Aggressive
 +75% attacker efficiency, +99% defender efficiency. Best used with high range ships to maximize first-strike damage before the defender can respond. High risk — certain ship matchups will destroy an aggressive attacker before they can deal meaningful damage.
 
-## PR formula
-
-((Planet Infra * (5+(land/250000))) + (Planet Count * 1000)) + fleet power
+Your PR comes from three things: your infrastructure (scaled by how much land you own), a flat amount per planet, and your total fleet power. See [Formulas → Power Rating](formulas.md#power-rating-pr) for the exact calculation and what each term means.
 
 ## Further reading
 

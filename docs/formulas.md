@@ -344,15 +344,17 @@ PR = total_infrastructure × (5 + (total_land / 250000))
 
 | Term | Meaning |
 |---|---|
-| `total_infrastructure` | Sum of `housing + commercial + mining + agriculture + industry` across all colonies |
-| `total_land` | Sum of colony land |
-| `total_planets` | Sum of `planet` across all colonies |
-| `total_fleet_power` | Sum of `power` across all ships in your fleet |
+| `total_infrastructure` | Every building you own — `housing + commercial + mining + agriculture + industry` summed across all colonies. Since each building occupies one land, this is effectively **the land you have actually built on** |
+| `total_land` | **All the land you own**, across every colony — built on or not |
+| `total_planets` | Planets summed across all colonies |
+| `total_fleet_power` | Power summed across every ship in your fleet |
+
+The two land-ish terms are easy to mix up: the multiplicand is your **built** land, while the figure inside the multiplier is your **total** land. A practical consequence is that **empty land still raises PR** — unbuilt land contributes nothing on its own, but it lifts the multiplier applied to everything you have built.
 
 **Small-empire variant:** if the value above comes out below **5,000**, a legacy formula is used instead:
 `total_infrastructure + (total_planets × 1000) + (population / 5) + total_fleet_power`.
 
-Note that **fleet power dominates** PR for combat-focused empires (it's added 1:1), while land contributes through the `land / 250000` term — every 250,000 land adds +1 to the per-infrastructure multiplier.
+Note that **fleet power dominates** PR for combat-focused empires (it's added 1:1), while land contributes through the `total_land / 250000` term — every 250,000 land you own adds +1 to the multiplier on each point of infrastructure.
 
 ---
 
