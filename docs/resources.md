@@ -30,7 +30,7 @@ The market is player-driven. Sellers post resources at a price they choose withi
 
 If no players are selling a resource, buyers are out of luck — with one exception. A **black market** provides an NPC source for **Ore**, **Raw Material**, and the **6 ship minerals** at quantity-scaling prices. It does **not** sell Food or Consumer Goods. On the live (real-time) server, Raw Material is unavailable on the black market — only Ore and the 6 minerals are sold there. The black market is buy-only; there is no NPC buyer of last resort. If demand dries up, sellers are stuck.
 
-Black-market unit prices scale with how much of the resource you already own (so bulk buying gets progressively more expensive):
+Black-market unit prices scale with how much of the resource you'd hold **after** the purchase — your current stock plus the amount you're buying — so bulk buying gets progressively more expensive within a single order:
 
 - **Minerals:** `1,250 × 1.05^(owned ÷ 1,000,000)`, capped at 1,000,000/unit
 - **Ore:** `25,000 × 1.1^(owned ÷ 10,000)`, capped at 10,000,000/unit

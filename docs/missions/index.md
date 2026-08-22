@@ -35,7 +35,7 @@ Practical playthrough order:
 Every race's track follows the same two-act format:
 
 - **Act 1 — Foundations.** Mostly economic and exploration milestones (income/turn, planet count, infrastructure tech, first power-rating thresholds). Rewards are mostly loyalty-cap raises, small credit/ore grants, and free colonies.
-- **Act 2 — Empire.** Larger goals (50–200 planets, 200K–800K PR, specific planet types). Rewards scale up with bigger loyalty-cap raises, multiple free colonies, and unique race-specific ship grants. Each track's final mission grants the same temporary perk: **infrastructure research cost cut to 1/10**, lasting roughly the next ~5 research levels before the natural cost curve catches back up.
+- **Act 2 — Empire.** Larger goals (50–200 planets, 200K–800K PR, specific planet types). Rewards scale up with bigger loyalty-cap raises, multiple free colonies, and unique race-specific ship grants. Each track's final mission grants the same temporary perk: **infrastructure research cost cut to 1/10**, which stays worthwhile for roughly the next 13 research levels — that is how long 20%-per-level growth takes to climb back to where the cost started.
 
 ## Reward types
 
@@ -47,7 +47,7 @@ Every race's track follows the same two-act format:
 | Free colonies | Auto-triggers exploration successes — 1 to 3 new planets joining your empire |
 | Infra tech levels | +2 or +5 levels to a specific infrastructure technology, equivalent to skipping that much research |
 | Ship grants | Free units of a race-unique ship (Guardian's Kal-Zul Destroyer K-Class, Aspha's alien G.Livid). These gift ships **cannot be built** — what the missions award is all you ever get |
-| Research-cost reduction | Final mission only — `resstart` and `resreq` divided by 10. Temporary buff: roughly the next ~5 research levels are heavily discounted before normal cost growth restores parity |
+| Research-cost reduction | Final mission only — `resstart` and `resreq` divided by 10. Temporary buff: roughly the next 13 research levels are discounted before normal cost growth restores parity |
 
 ## Costs
 

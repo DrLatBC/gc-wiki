@@ -2,7 +2,7 @@
 
 There are five income types in Galactic Conquest: Tax, Commercial, Agriculture, Industry, and Mining. Each is associated with an infrastructure type that players research and build on their colonies.
 
-Players can mix income types but should focus on one. The optimal meta for all income types is to put **5 levels into Housing research first**, then dump all remaining research into the chosen income type. This minimizes the land wasted on Housing buildings while maintaining enough population to staff other infrastructure.
+Players can mix income types but should focus on one. The optimal meta for all income types is to put **7 levels into Housing research first**, then dump all remaining research into the chosen income type. This minimizes the land wasted on Housing buildings while maintaining enough population to staff other infrastructure.
 
 Each race has a base income modifier per income type. Research levels multiply on top of that base at **+10% per level** for most income types (+8% for Commercial CG production, +40% for Mining minerals).
 
@@ -63,12 +63,12 @@ Mining produces ship minerals (the primary income source) and ore (a deposit-cap
 **Minerals (the main output, `sqrt`-scaled):**
 
 ```
-Minerals = 1 + sqrt(
+Minerals = ceiling(sqrt(
     Mining × (Planets × 0.3)
     × (1 + 0.4 × Research)
     × (Planet Mining Mod / 100)
     × Race Mineral Modifier
-) × Turns
+)) × Turns
 ```
 
 **Ore (linear, capped by colony deposit):**
