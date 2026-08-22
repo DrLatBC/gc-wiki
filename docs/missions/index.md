@@ -17,17 +17,17 @@ Only **three races** have a mission track. The remaining races can be played nor
 
 **Claim loyalty missions as soon as you qualify — the reward is a permanent cap increase, not a one-time top-up.**
 
-**5,000 is your base personal loyalty cap.** Normal loyalty (the +5/turn auto-raise that runs whenever you spend a turn with Consumer Goods in stock; see [Income Types → Tax](../income-types.md#tax-housing)) climbs to that ceiling and stops. Loyalty-reward missions **raise the ceiling itself**: as of **Patch 106** the personal cap is "5,000 base, with bonuses adding on for missions you've completed," so a +250-loyalty mission lifts your cap to 5,250 and leaves it there. The Act 2 tracks alone hand out **+50, +100, +150, +250**, and they stack.
+**5,000 is your base personal loyalty cap.** Normal loyalty (the passive climb that runs while you hold Consumer Goods; see [Income Types → Tax](../income-types.md#tax-housing)) climbs to that ceiling and stops. Loyalty-reward missions **raise the ceiling itself**: as of **Patch 106** the personal cap is "5,000 base, with bonuses adding on for missions you've completed," so a +250-loyalty mission lifts your cap to 5,250 and leaves it there. The Act 2 tracks alone hand out **+50, +100, +150, +250**, and they stack.
 
 This replaced the older behaviour, where completing a mission dumped a one-time lump of loyalty onto the colonies you happened to own at that moment. The practical consequences are the reverse of what that used to imply:
 
-- **You cannot waste a loyalty reward by claiming it early.** Your current loyalty is irrelevant to the reward — the extra ceiling is banked permanently, and colonies climb into it afterwards at +5/turn.
+- **You cannot waste a loyalty reward by claiming it early.** Your current loyalty is irrelevant to the reward — the extra ceiling is banked permanently, and colonies climb into it afterwards on their own.
 - **Earlier is strictly better.** The cap raise is permanent but the growth toward it is per-turn, so claiming sooner gives your colonies longer to fill the new headroom.
 
 Practical playthrough order:
 
 1. **Complete loyalty missions the moment you meet their goals.** There is no reason to hold one back.
-2. **Keep Consumer Goods in stock.** A raised cap only pays off while the +5/turn auto-raise is actually running underneath it.
+2. **Keep Consumer Goods in stock.** A raised cap only pays off while that passive climb is actually running underneath it.
 3. Time the credit-burning "building" missions (see costs below) for when your reserves are well above the threshold — completing them with exactly the threshold leaves your treasury at zero.
 
 ## Structure

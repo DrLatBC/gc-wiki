@@ -212,7 +212,7 @@ Patch 106 ("Planetary Fracture") reworked how Minor and Major Gordos behave, aft
 
 **Targeting:**
 
-- **On yourself:** a Gordo can be applied to **any chosen colony** in your colony list (previously it affected all systems at once).
+- **On yourself:** a Gordo can be applied to **any chosen colony** in your colony list (previously it always hit your outermost colony, with no say in the matter).
 - **On another empire:** a Gordo only affects their **outermost border colony** (the topmost in their list).
 - **Major Gordo can no longer be used on Homeworld colonies** (Minor Gordo still can).
 

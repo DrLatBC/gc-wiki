@@ -60,7 +60,7 @@ All economic modifiers are stored as percentages added to a 1.0× baseline. Conv
 
 - **Viable income:** Tax only
 - **Does not consume Food** — population requires no food supply
-- **Lowest Loyalty cap** — as of Patch 106 Guardians *can* raise loyalty (it auto-climbs +5/turn with Consumer Goods in stock, like every race), but their personal cap is only **2,500** (→ 3,000 after all of Act 1's loyalty missions) vs. 5,000+ for everyone else. Loyalty directly multiplies Tax income, so Guardians still cap well below other races' theoretical maximum
+- **Lowest Loyalty cap** — as of Patch 106 Guardians *can* raise loyalty (it climbs passively with Consumer Goods in stock, like every race), but their personal cap is only **2,500** (→ 3,000 after all of Act 1's loyalty missions) vs. 5,000+ for everyone else. Loyalty directly multiplies Tax income, so Guardians still cap well below other races' theoretical maximum
 - Can die if all planets are lost
 - Standard clustering (C1/C2/C3)
 - PR is determined by infrastructure and ships only, not population

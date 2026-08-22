@@ -294,9 +294,7 @@ new_population = population + floor(
 )
 ```
 
-**Maximum population for Collective:** `max_population × 2` (double the normal cap).
-
-Capped at `max_population × 2`.
+Capped at `max_population`, the same ceiling as every other race.
 
 ---
 
@@ -446,7 +444,6 @@ The entire expression is float math, truncated toward zero (`fix`) **exactly onc
 | Collective | **+1,100%** | 12× |
 | Terran | −50% | 0.5× |
 | A.Miner | −95% | 0.05× |
-| Marauder D-class | (not playable) | — |
 | Guardian | −99% | 0.01× |
 | Viral | −99% | 0.01× |
 
@@ -484,11 +481,11 @@ Starting at 2 and compounding 20%, a line hits the 750 cap at **level 34** — l
 
 ## Loyalty (raising)
 
-**Reworked in Patch 106.** The old manual "reward loyalty" action — which cost both turns *and* credits (`population × 2 × turns_spent^1.5`) — has been **removed entirely**. Loyalty now raises automatically:
+**Reworked in Patch 106.** The old manual "reward loyalty" action — which cost both turns *and* credits (`population × 2 × turns_spent^1.5`) — has been **removed entirely**. Loyalty now rises **passively**:
 
-- Whenever you **spend a turn while holding a supply of Consumer Goods**, every colony gains **+5 loyalty per turn used**, climbing toward your personal cap.
-- There is **no credit cost** and no per-action turn cap — it rides along with normal turn use.
-- If you run out of Consumer Goods, loyalty stops rising (turns spent without CGs in stock grant no loyalty).
+- As long as you are **holding Consumer Goods**, every colony's loyalty climbs on its own toward your personal cap. No action to take, nothing to spend.
+- There is **no credit cost and no turn cost** — keeping CGs in stock is the whole requirement.
+- If you run out of Consumer Goods, loyalty stops climbing.
 
 **Personal cap** = race base + loyalty-reward mission bonuses:
 

@@ -14,7 +14,7 @@ Tax income converts population into credits. Population is fed by Food (required
 
 **Formula:** `((Population / 2) + (Population × Loyalty / 5000)) × Race Tax Modifier × Turns`
 
-- Loyalty raises **automatically at +5 per turn used**, as long as you hold a supply of Consumer Goods (reworked in Patch 106 — the old turn-and-credit "reward loyalty" action is gone; see [Formulas → Loyalty (raising)](formulas.md#loyalty-raising))
+- Loyalty rises **passively** as long as you hold a supply of Consumer Goods (reworked in Patch 106 — the old turn-and-credit "reward loyalty" action is gone; see [Formulas → Loyalty (raising)](formulas.md#loyalty-raising))
 - The loyalty term equals the base population term at **2,500** loyalty — that's where tax income exactly doubles (`pop/2 + pop/2 = pop`)
 - At **5,000** loyalty the loyalty term is twice the base term, so tax reaches `1.5 × pop` — **triple** the zero-loyalty income. 5,000 is the *base* personal cap; loyalty-reward missions raise it higher, scaling income past 1.5 × pop
 - **Guardians can now raise loyalty** (Patch 106) — but only to a **2,500 base cap** (→ 3,000 after completing all of Act 1's loyalty missions), still the lowest in the game
