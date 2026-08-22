@@ -254,7 +254,9 @@ A build is **rejected** if the new buildings would require more labor than you h
 housing_min = ceil(total_buildings / (10 + Hr))
 ```
 
-This is the source of the "7 housing meta" you'll see referenced — at full housing research investment (Hr ≈ 250+), each housing supports ~260 pop, so even a 2,000-land colony only needs ~8 housing for staffing. The other ~1,992 land slots go to your income building of choice.
+This is the source of the **"7 housing meta"** you'll see referenced — the 7 is a **housing research level**, not a building count. At `Hr = 7` each housing supports 17 pop, so housing only ever occupies `1 / (10 + Hr)` of your land — about **6%**. A 255-land colony needs 15 housing; a 2,000-land colony needs 118. Everything else goes to your income building of choice.
+
+The reason to keep it *low* is the 255-level research cap: every level spent on housing is a level not spent on the income line that actually multiplies your output. Pushing housing research higher has sharply diminishing returns — going from `Hr = 7` to `Hr = 20` only frees up another ~3% of your land, which is a poor trade for 13 levels.
 
 For Collective, `pop_per_housing` is doubled (Collective's racial 2× cap), so `housing_min = ceil(total / ((10 + Hr) × 2))`.
 
