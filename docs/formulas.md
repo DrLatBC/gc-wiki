@@ -472,10 +472,11 @@ So each level costs **~20% more turns than the previous** (with a +1 floor so it
 | Level band | Cap (turns per level) |
 |---|---|
 | ≤ 100 | 750 |
-| 101 – 200 | 2,500 |
-| > 200 | 15,000 |
+| 101+ | 2,500 |
 
-Starting at 2 and compounding 20%, a line reaches the 750 cap around level ~33; from level 101 onward every level is a flat 2,500 turns, and past 200 it's 15,000. This is the grind referenced on the [Turns](turns.md) page.
+Starting at 2 and compounding 20%, a line hits the 750 cap at **level 34** — level 33 is the last one below it, at 644 turns. Every level from 34 to 100 then costs a flat 750, and from 101 onward a flat 2,500. This is the grind referenced on the [Turns](turns.md) page.
+
+> **Your total infrastructure research is capped at 255 levels**, summed across all five types. You choose how to spread those levels between Housing, Commercial, Industry, Agriculture, and Mining — which is why the income meta parks Housing at a low level and pours the rest into one income line.
 
 ---
 
